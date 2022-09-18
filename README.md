@@ -1,4 +1,5 @@
-# Rudoff_Jackson
+# Jackson Rudoff's MDS Course Repository
+
 Repo for storing my homework and other assignments in G5072!
 
 *Contact Info*
