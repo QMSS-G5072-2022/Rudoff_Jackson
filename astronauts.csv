@@ -1,0 +1,1278 @@
+name,gender,birth,nationality,military_civilian,mission_number,occupation,year_of_mission,mission_hours,mission_title
+"Gagarin, Yuri",male,1934,U.S.S.R/Russia,military,1,pilot,1961,1.77,Vostok 1
+"Titov, Gherman",male,1935,U.S.S.R/Russia,military,1,pilot,1961,25,Vostok 2
+"Glenn, John H., Jr.",male,1921,U.S.,military,1,pilot,1962,5,MA-6
+"Glenn, John H., Jr.",male,1921,U.S.,military,2,pilot,1998,213,STS-95
+"Carpenter, M. Scott",male,1925,U.S.,military,1,pilot,1962,5,Mercury-Atlas 7
+"Nikolayev, Andriyan",male,1929,U.S.S.R/Russia,military,1,pilot,1962,94,Vostok 3
+"Nikolayev, Andriyan",male,1929,U.S.S.R/Russia,military,2,pilot,1970,424,Soyuz 9
+"Popovich, Pavel",male,1930,U.S.S.R/Russia,military,1,pilot,1962,70.93,Vostok 4
+"Popovich, Pavel",male,1930,U.S.S.R/Russia,military,2,commander,1974,377,Soyuz 14
+"Schirra, Walter M., Jr.",male,1923,U.S.,military,1,pilot,1962,9.22,Mercury-Atlas 8
+"Schirra, Walter M., Jr.",male,1923,U.S.,military,2,commander,1965,25.87,Gemini 6A
+"Schirra, Walter M., Jr.",male,1923,U.S.,military,3,commander,1968,260.13,Apollo 7
+"Cooper, L. Gordon, Jr.",male,1927,U.S.,military,1,pilot,1963,34.32,Mercury-Atlas 9
+"Cooper, L. Gordon, Jr.",male,1927,U.S.,military,2,commander,1965,191.92,Gemini 5
+"Bykovsky, Valery",male,1934,U.S.S.R/Russia,military,1,pilot,1963,119.13,Vostok 5
+"Bykovsky, Valery",male,1934,U.S.S.R/Russia,military,2,commander,1976,189,Soyuz 22
+"Bykovsky, Valery",male,1934,U.S.S.R/Russia,military,3,commander,1978,188,Soyuz 31/29
+"Tereshkova, Valentina",female,1937,U.S.S.R/Russia,military,1,pilot,1963,70.83,Vostok 6
+"Komarov, Vladimir",male,1927,U.S.S.R/Russia,military,1,commander,1964,24.28,Voskhod 1
+"Komarov, Vladimir",male,1927,U.S.S.R/Russia,military,2,commander,1967,26.78,Soyuz 1
+"Feoktistov, Konstantin",male,1926,U.S.S.R/Russia,civilian,1,MSP,1964,24.28,Voskhod 1
+"Yegorov, Boris",male,1937,U.S.S.R/Russia,civilian,1,MSP,1964,24.28,Voskhod 1
+"Belyayev, Pavel",male,1925,U.S.S.R/Russia,military,1,commander,1965,26.03,Voskhod 2
+"Leonov, Aleksei",male,1934,U.S.S.R/Russia,military,1,pilot,1965,26.03,Voskhod 2
+"Leonov, Aleksei",male,1934,U.S.S.R/Russia,military,2,commander,1975,142,Soyuz 19
+"Grissom, Virgil I.",male,1926,U.S.,military,1,commander,1965,4.86,Gemini 3
+"Young, John W.",male,1930,U.S.,military,1,pilot,1965,4.86,Gemini 3
+"Young, John W.",male,1930,U.S.,military,2,pilot,1966,70.77,Gemini 10
+"Young, John W.",male,1930,U.S.,military,3,pilot,1969,192.05,Apollo 10
+"Young, John W.",male,1930,U.S.,military,4,commander,1972,265.85,Apollo 16
+"Young, John W.",male,1930,U.S.,military,5,commander,1981,54.5,STS-1
+"Young, John W.",male,1930,U.S.,military,6,commander,1983,240,STS-9
+"McDivitt, James A.",male,1929,U.S.,military,1,commander,1965,97,Gemini 4
+"McDivitt, James A.",male,1929,U.S.,military,2,commander,1969,241,Apollo 9
+"White, Edward H., II",male,1930,U.S.,military,1,pilot,1965,97.93,Gemini 4
+"Conrad, Charles, Jr.",male,1930,U.S.,military,1,pilot,1965,191,Gemini 5
+"Conrad, Charles, Jr.",male,1930,U.S.,military,2,commander,1966,71,Gemini 11
+"Conrad, Charles, Jr.",male,1930,U.S.,military,3,commander,1969,244,Apollo 12
+"Conrad, Charles, Jr.",male,1930,U.S.,military,4,commander,1973,673,Skylab 2
+"Borman, Frank",male,1928,U.S.,military,1,commander,1965,330.58,Gemini 7
+"Borman, Frank",male,1928,U.S.,military,2,commander,1968,147,Apollo 8
+"Lovell, James A., Jr.",male,1928,U.S.,military,1,pilot,1965,330.58,Gemini 7
+"Lovell, James A., Jr.",male,1928,U.S.,military,2,commander,1966,94,Gemini 12
+"Lovell, James A., Jr.",male,1928,U.S.,military,3,pilot,1968,147,Apollo 8
+"Lovell, James A., Jr.",male,1928,U.S.,military,4,commander,1970,142,Apollo 13
+"Stafford, Thomas P.",male,1930,U.S.,military,1,pilot,1965,25.86,gemini 6A
+"Stafford, Thomas P.",male,1930,U.S.,military,2,commander,1966,72,Gemini 9A
+"Stafford, Thomas P.",male,1930,U.S.,military,3,commander,1969,192,Apollo 10
+"Stafford, Thomas P.",male,1930,U.S.,military,4,commander,1975,217,ASTP
+"Armstrong, Neil A.",male,1930,U.S.,civilian,1,commander,1966,11,Gemini 8
+"Armstrong, Neil A.",male,1930,U.S.,civilian,2,commander,1969,195,Apollo 11
+"Scott, David R.",male,1932,U.S.,military,1,pilot,1966,240.68,Gemini 8
+"Scott, David R.",male,1932,U.S.,military,2,pilot,1969,241,Apollo 9
+"Scott, David R.",male,1932,U.S.,military,3,commander,1971,312,Apollo 15
+"Cernan, Eugene A.",male,1934,U.S.,military,1,pilot,1966,72,Gemini 9A
+"Cernan, Eugene A.",male,1934,U.S.,military,2,pilot,1969,192.05,Apollo 10
+"Cernan, Eugene A.",male,1934,U.S.,military,3,commander,1972,302,Apollo 17
+"Collins, Michael",male,1930,U.S.,civilian,1,pilot,1966,71,Gemini 10
+"Collins, Michael",male,1930,U.S.,civilian,2,pilot,1969,195,Apollo 11
+"Gordon, Richard F., Jr.",male,1929,U.S.,military,1,pilot,1966,71.28,Gemini 11
+"Gordon, Richard F., Jr.",male,1929,U.S.,military,2,pilot,1969,244.6,Apollo 12
+"Aldrin, Edwin Eugene, Jr.",male,1930,U.S.,military,1,pilot,1966,94.58,Gemini 12
+"Aldrin, Edwin Eugene, Jr.",male,1930,U.S.,military,2,pilot,1969,195,Apollo 11
+"Eisele, Donn F.",male,1930,U.S.,military,1,pilot,1968,260.13,Apollo 7
+"Cunningham, Ronnie Walter",male,1932,U.S.,civilian,1,pilot,1968,260.13,Apollo 7
+"Savinykh, Viktor",male,1940,U.S.S.R/Russia,civilian,2,flight engineer,1985,4035,Salyut 7
+"Savinykh, Viktor",male,1940,U.S.S.R/Russia,civilian,3,flight engineer,1988,236,2
+Jugderdemidiin Gurragchaa,male,1947,Mongolia,civilian,1,flight engineer,1981,188.7,Soyuz 39
+"Crippen, Robert L.",male,1937,U.S.,military,1,pilot,1981,54,STS-1
+"Crippen, Robert L.",male,1937,U.S.,military,2,commander,1983,146,STS-7
+"Crippen, Robert L.",male,1937,U.S.,military,3,commander,1984,168,STS-41-C
+"Crippen, Robert L.",male,1937,U.S.,military,4,commander,1984,197,STS-41-G
+Dumitru Prunariu,male,1952,Romania,civilian,1,MSP,1981,188.7,Soyuz 40
+"Engle, Joe H.",male,1932,U.S.,military,1,commander,1981,30,STS-2
+"Engle, Joe H.",male,1932,U.S.,military,2,commander,1985,170,STS-51-I
+"Truly, Richard H.",male,1937,U.S.,military,1,pilot,1981,54.21,STS-2
+"Truly, Richard H.",male,1937,U.S.,military,2,commander,1983,145.13,STS-8
+"Fullerton, Charles G.",male,1936,U.S.,military,1,pilot,1982,192,STS-3
+"Fullerton, Charles G.",male,1936,U.S.,military,2,commander,1985,190,STS-51-F
+"Berezovoy, Anatoly",male,1942,U.S.S.R/Russia,military,1,commander,1982,5073,Salyut 7
+"Chrétien, Jean-Loup",male,1938,France,military,1,MSP,1982,190,Salyut 7
+"Chrétien, Jean-Loup",male,1938,France,military,2,MSP,1988,594,Mir Aragatz
+"Chrétien, Jean-Loup",male,1938,France,military,3,MSP,1997,259.3,STS-86
+"Hartsfield, Henry W., Jr.",male,1933,U.S.,military,1,pilot,1982,169,STS-4
+"Hartsfield, Henry W., Jr.",male,1933,U.S.,military,2,commander,1984,144,STS-41-D
+"Hartsfield, Henry W., Jr.",male,1933,U.S.,military,3,commander,1985,168,STS-61-A
+"Serebrov, Aleksandr",male,1944,U.S.S.R/Russia,civilian,1,flight engineer,1982,189,Salyut 7
+"Beregovoi, Georgi",male,1921,U.S.S.R/Russia,military,1,commander,1968,94.83,Soyuz 3
+"Anders, William Alison",male,1933,U.S.,civilian,1,pilot,1968,147,Apollo 8
+"Shatalov, Vladimir",male,1927,U.S.S.R/Russia,military,1,commander,1969,71.33,Soyuz 4
+"Shatalov, Vladimir",male,1927,U.S.S.R/Russia,military,2,commander,1969,118,Soyuz 8
+"Shatalov, Vladimir",male,1927,U.S.S.R/Russia,military,3,commander,1971,47,Soyuz 10
+"Volynov, Boris",male,1934,U.S.S.R/Russia,military,1,commander,1969,72,Soyuz 5
+"Volynov, Boris",male,1934,U.S.S.R/Russia,military,2,commander,1976,1182,Soyuz 21
+"Yeliseyev, Aleksei",male,1934,U.S.S.R/Russia,civilian,1,flight engineer,1969,47,Soyuz 5/4
+"Yeliseyev, Aleksei",male,1934,U.S.S.R/Russia,civilian,2,flight engineer,1969,118,Soyuz 8
+"Yeliseyev, Aleksei",male,1934,U.S.S.R/Russia,civilian,3,flight engineer,1971,47,Soyuz 10
+"Khrunov, Yevgeny",male,1933,U.S.S.R/Russia,military,1,MSP,1969,48.17,Soyuz 5/4
+"Schweickart, Russell L.",male,1935,U.S.,civilian,1,pilot,1969,241,apollo 9
+"Shonin, Georgi",male,1935,U.S.S.R/Russia,military,1,commander,1969,118,Soyuz 6
+"Kubasov, Valeri",male,1935,U.S.S.R/Russia,military,1,flight engineer,1969,118,Soyuz 6
+"Kubasov, Valeri",male,1935,U.S.S.R/Russia,military,2,flight engineer,1975,142,Soyuz 19
+"Kubasov, Valeri",male,1935,U.S.S.R/Russia,military,3,commander,1980,188,Soyuz 36/35
+"Filipchenko, Anatoly",male,1928,U.S.S.R/Russia,military,1,commander,1969,118,Soyuz 7
+"Filipchenko, Anatoly",male,1928,U.S.S.R/Russia,military,2,commander,1974,142,Soyuz 16
+"Volkov, Vladislav",male,1935,U.S.S.R/Russia,military,1,flight engineer,1969,118,Soyuz 7
+"Volkov, Vladislav",male,1935,U.S.S.R/Russia,military,2,flight engineer,1971,570,Soyuz 11
+"Gorbatko, Viktor",male,1934,U.S.S.R/Russia,military,1,MSP,1969,118,Soyuz 7
+"Gorbatko, Viktor",male,1934,U.S.S.R/Russia,military,2,commander,1977,425,Soyuz 24
+"Gorbatko, Viktor",male,1934,U.S.S.R/Russia,military,3,commander,1980,188,Soyuz 37/36
+"Bean, Alan Lavern",male,1932,U.S.,military,1,pilot,1969,244.81,Apollo 12
+"Bean, Alan Lavern",male,1932,U.S.,military,2,commander,1973,1427.23,Skylab 3
+"Swigert, John L., Jr.",male,1931,U.S.,civilian,1,pilot,1970,142,Apollo 13
+"Haise, Fred W., Jr.",male,1933,U.S.,civilian,1,pilot,1970,142,Apollo 13
+"Sevastyanov, Vitali",male,1935,U.S.S.R/Russia,civilian,1,flight engineer,1970,424,Soyuz 9
+"Sevastyanov, Vitali",male,1935,U.S.S.R/Russia,civilian,2,flight engineer,1975,1511,Soyuz 18
+"Shepard, Alan B., Jr.",male,1923,U.S.,military,2,commander,1971,216,Apollo 14
+"Roosa, Stuart A.",male,1933,U.S.,military,1,pilot,1971,216,Apollo 14
+"Mitchell, Edgar D.",male,1930,U.S.,military,1,pilot,1971,216,Apollo 14
+"Rukavishnikov, Nikolai",male,1932,U.S.S.R/Russia,military,1,flight engineer,1971,47,Soyuz 10
+"Rukavishnikov, Nikolai",male,1932,U.S.S.R/Russia,military,2,flight engineer,1974,142,Soyuz 16
+"Rukavishnikov, Nikolai",male,1932,U.S.S.R/Russia,military,3,commander,1979,47,Soyuz 33
+"Dobrovolski, Georgi",male,1928,U.S.S.R/Russia,military,1,commander,1971,570,Soyuz 11
+"Patsayev, Viktor",male,1933,U.S.S.R/Russia,civilian,1,flight engineer,1971,570,Soyuz 11
+"Worden, Alfred M.",male,1932,U.S.,military,1,pilot,1971,295.2,Apollo 15
+"Irwin, James B.",male,1930,U.S.,military,1,pilot,1971,295,Apollo 15
+"Mattingly, Thomas K., II",male,1936,U.S.,military,1,pilot,1972,266,Apollo 16
+"Mattingly, Thomas K., II",male,1936,U.S.,military,2,commander,1982,169,STS-4
+"Mattingly, Thomas K., II",male,1936,U.S.,military,3,commander,1985,73,STS-151-C
+"Duke, Jr. Charles Moss",male,1935,U.S.,military,1,pilot,1972,265,Apollo 16
+"Evans, Ronald E.",male,1933,U.S.,military,1,pilot,1972,301,Apollo 17
+"Schmitt, Harrison H.",male,1935,U.S.,civilian,1,pilot,1972,301,Apollo 17
+"Weitz, Paul J.",male,1932,U.S.,military,1,pilot,1973,267,Skylab-2
+"Weitz, Paul J.",male,1932,U.S.,military,2,commander,1983,120,STS-6
+"Kerwin, Joseph P.",male,1932,U.S.,military,1,MSP,1973,672,Skylab 2
+"Lousma, Jack R.",male,1936,U.S.,military,1,pilot,1973,1427,Skylab 3
+"Lousma, Jack R.",male,1936,U.S.,military,2,commander,1982,192,STS-3
+"Garriott, Owen K.",male,1930,U.S.,civilian,1,MSP,1973,1427,Skylab 3
+"Garriott, Owen K.",male,1930,U.S.,civilian,2,MSP,1983,247,STS-9
+"Lazarev, Vasili",male,1928,U.S.S.R/Russia,military,1,commander,1973,47,Soyuz 12
+"Makarov, Oleg",male,1933,U.S.S.R/Russia,civilian,1,flight engineer,1973,47,Soyuz 12
+"Makarov, Oleg",male,1933,U.S.S.R/Russia,civilian,2,flight engineer,1978,142,Soyuz 27/26
+"Makarov, Oleg",male,1933,U.S.S.R/Russia,civilian,3,flight engineer,1980,307,Soyuz T­3
+"Carr, Gerald P.",male,1932,U.S.,military,1,commander,1974,2017,Skylab 4
+"Pogue, William R.",male,1930,U.S.,military,1,pilot,1973,2017,Skylab 4
+"Gibson, Edward G.",male,1936,U.S.,civilian,1,MSP,1973,2017,Skylab 4
+"Klimuk, Pyotr",male,1942,U.S.S.R/Russia,military,1,commander,1973,188,Soyuz 13
+"Klimuk, Pyotr",male,1942,U.S.S.R/Russia,military,2,commander,1975,1511,Saluyt 4
+"Klimuk, Pyotr",male,1942,U.S.S.R/Russia,military,3,commander,1978,190,Saluyt 6
+"Lebedev, Valentin",male,1942,U.S.S.R/Russia,civilian,1,flight engineer,1973,188,Soyuz 13
+"Lebedev, Valentin",male,1942,U.S.S.R/Russia,civilian,2,flight engineer,1982,5313,Salyut 7
+"Artyukhin, Yuri",male,1930,U.S.S.R/Russia,military,1,flight engineer,1974,377,Soyuz 14
+"Sarafanov, Gennadi",male,1942,U.S.S.R/Russia,military,1,commander,1974,48,Soyuz 15
+"Dyomin, Lev",male,1926,U.S.S.R/Russia,military,1,flight engineer,1974,48,Soyuz 15
+"Gubarev, Aleksei",male,1931,U.S.S.R/Russia,military,1,commander,1975,709,Salyut 4
+"Gubarev, Aleksei",male,1931,U.S.S.R/Russia,military,2,commander,1978,190,Salyut 6
+"Grechko, Georgi",male,1931,U.S.S.R/Russia,civilian,1,flight engineer,1975,709,Salyut 4
+"Grechko, Georgi",male,1931,U.S.S.R/Russia,civilian,2,flight engineer,1977,2314,Salyut 6
+"Grechko, Georgi",male,1931,U.S.S.R/Russia,civilian,3,flight engineer,1985,213,Soyuz 7
+"Brand, Vance D.",male,1931,U.S.,civilian,1,pilot,1975,217.5,ASTP
+"Brand, Vance D.",male,1931,U.S.,civilian,2,commander,1982,122.25,STS-5
+"Brand, Vance D.",male,1931,U.S.,civilian,3,commander,1984,191.25,STS-41-B
+"Brand, Vance D.",male,1931,U.S.,civilian,4,commander,1990,215,STS-35
+"Slayton, Donald K.",male,1924,U.S.,civilian,1,pilot,1975,217.47,ASTP
+"Zholobov, Vitali",male,1937,U.S.S.R/Russia,military,1,flight engineer,1976,1182,Soyuz 21
+"Aksyonov, Vladimir",male,1935,U.S.S.R/Russia,military,1,flight engineer,1976,189,Soyuz 22
+"Aksyonov, Vladimir",male,1935,U.S.S.R/Russia,military,2,flight engineer,1980,94,Soyuz T­2
+"Zudov, Vyacheslav",male,1942,U.S.S.R/Russia,military,1,commander,1976,48,Soyuz 23
+"Rozhdestvensky, Valery",male,1939,U.S.S.R/Russia,military,1,flight engineer,1976,48,Soyuz 23
+"Glazkov, Yuri",male,1939,U.S.S.R/Russia,military,1,flight engineer,1977,425,Soyuz 24
+"Kovalyonok, Vladimir",male,1942,U.S.S.R/Russia,military,1,commander,1977,48,Soyuz 25
+"Kovalyonok, Vladimir",male,1942,U.S.S.R/Russia,military,2,commander,1978,3350,Salyut 6
+"Kovalyonok, Vladimir",male,1942,U.S.S.R/Russia,military,3,commander,1981,1793,Salyut 6
+"Ryumin, Valery",male,1939,U.S.S.R/Russia,civilian,1,flight engineer,1977,48,Soyuz 25
+"Ryumin, Valery",male,1939,U.S.S.R/Russia,civilian,2,flight engineer,1979,4200,Salyut 6
+"Ryumin, Valery",male,1939,U.S.S.R/Russia,civilian,3,flight engineer,1980,4436,Salyut 6
+"Ryumin, Valery",male,1939,U.S.S.R/Russia,civilian,4,MSP,1998,235,STS­ 91
+"Romanenko, Yuri",male,1944,U.S.S.R/Russia,military,1,commander,1977,2314,Soyuz 26/27
+"Romanenko, Yuri",male,1944,U.S.S.R/Russia,military,2,commander,1980,188,Soyuz 38
+"Romanenko, Yuri",male,1944,U.S.S.R/Russia,military,3,commander,1987,7835,2
+"Dzhanibekov, Vladimir",male,1942,U.S.S.R/Russia,military,1,commander,1978,142,Soyuz 27/26
+"Dzhanibekov, Vladimir",male,1942,U.S.S.R/Russia,military,2,commander,1981,188,Soyuz 39
+"Dzhanibekov, Vladimir",male,1942,U.S.S.R/Russia,military,3,commander,1982,189,Salyut 7
+"Dzhanibekov, Vladimir",male,1942,U.S.S.R/Russia,military,4,commander,1984,283,Salyut 7
+"Dzhanibekov, Vladimir",male,1942,U.S.S.R/Russia,military,5,commander,1985,2691,Salyut 7
+Vladimir Remek,male,1948,Czechoslovakia,military,1,pilot,1978,190.28,Soyuz 28
+"Ivanchenkov, Aleksandr",male,1940,U.S.S.R/Russia,military,1,flight engineer,1978,3350,Salyut 6
+"Ivanchenkov, Aleksandr",male,1940,U.S.S.R/Russia,military,2,flight engineer,1982,189,Salyut 7
+Miroslaw Hermaszewske,male,1941,Poland,military,1,pilot,1978,190.03,Soyuz 30
+"Jahn, Sigmund",male,1937,Germany,military,1,MSP,1978,188.82,Soyuz 31
+"Lyakhov, Vladimir",male,1941,U.S.S.R/Russia,military,1,commander,1979,4200,Salyut 6
+"Lyakhov, Vladimir",male,1941,U.S.S.R/Russia,military,2,commander,1983,3586,Salyut 7
+"Lyakhov, Vladimir",male,1941,U.S.S.R/Russia,military,3,commander,1988,212,3
+Georgi Ivanov,male,1940,Bulgaria,military,1,pilot,1979,47,Soyuz 33
+"Popov, Leonid",male,1945,U.S.S.R/Russia,military,1,commander,1980,4436,Salyut 6
+"Popov, Leonid",male,1945,U.S.S.R/Russia,military,2,commander,1981,188,Salyut 6
+"Popov, Leonid",male,1945,U.S.S.R/Russia,military,3,commander,1982,189,Salyut 7
+Bertalan Farkas,male,1949,Hungary,civilian,1,pilot,1980,188.75,Soyuz 36/35
+"Malyshev, Yuri",male,1941,U.S.S.R/Russia,military,1,commander,1980,94,Salyut 7
+"Malyshev, Yuri",male,1941,U.S.S.R/Russia,military,2,commander,1984,189,Salyut 7
+Pham Tuan,male,1947,Vietnam,military,1,MSP,1980,188.7,Salyut 6
+Arnaldo Tamayo Mendez,male,1942,Cuba,military,1,pilot,1980,1887.71,Soyuz 38
+"Kizim, Leonid",male,1941,U.S.S.R/Russia,military,1,commander,1980,307,Salyut 6
+"Kizim, Leonid",male,1941,U.S.S.R/Russia,military,2,commander,1984,5686,Salyut 7
+"Kizim, Leonid",male,1941,U.S.S.R/Russia,military,3,commander,1986,3000,1
+"Strekalov, Gennadi",male,1940,U.S.S.R/Russia,civilian,1,MSP,1980,307,Salyut 6
+"Strekalov, Gennadi",male,1940,U.S.S.R/Russia,civilian,2,flight engineer,1983,48,Soyuz T­8
+"Strekalov, Gennadi",male,1940,U.S.S.R/Russia,civilian,3,flight engineer,1984,189,Salyut 7
+"Strekalov, Gennadi",male,1940,U.S.S.R/Russia,civilian,4,flight engineer,1990,3140,7
+"Strekalov, Gennadi",male,1940,U.S.S.R/Russia,civilian,5,flight engineer,1995,2768,18
+"Savinykh, Viktor",male,1940,U.S.S.R/Russia,civilian,1,flight engineer,1981,1793,Salyut 6
+"Serebrov, Aleksandr",male,1944,U.S.S.R/Russia,civilian,2,MSP,1983,48,Soyuz T­8
+"Serebrov, Aleksandr",male,1944,U.S.S.R/Russia,civilian,3,flight engineer,1990,3990,5
+"Serebrov, Aleksandr",male,1944,U.S.S.R/Russia,civilian,4,flight engineer,1993,4721,14
+"Savitskaya, Svetlana",female,1948,U.S.S.R/Russia,civilian,1,MSP,1982,189,Salyut 7
+"Savitskaya, Svetlana",female,1948,U.S.S.R/Russia,civilian,2,flight engineer,1984,283,Salyut 7
+"Overmyer, Robert F.",male,1936,U.S.,military,1,pilot,1982,122,STS-5
+"Overmyer, Robert F.",male,1936,U.S.,military,2,commander,1985,168,STS-51-B
+"Allen, Joseph P.",male,1937,U.S.,civilian,1,MSP,1982,122,STS-5
+"Allen, Joseph P.",male,1937,U.S.,civilian,2,MSP,1984,191,STS-51-A
+"Lenoir, William B.",male,1939,U.S.,civilian,1,MSP,1982,122,STS-5
+"Bobko, Karol J.",male,1937,U.S.,military,1,pilot,1983,122,STS-6
+"Bobko, Karol J.",male,1937,U.S.,military,2,commander,1985,236,STS-51-D
+"Bobko, Karol J.",male,1937,U.S.,military,3,commander,1985,98,STS-51-J
+"Peterson, Donald H.",male,1933,U.S.,military,1,MSP,1983,120,STS-6
+"Musgrave, Franklin Story",male,1935,U.S.,civilian,1,MSP,1983,120,STS-6
+"Musgrave, Franklin Story",male,1935,U.S.,civilian,2,MSP,1985,191,STS-51F
+"Musgrave, Franklin Story",male,1935,U.S.,civilian,3,MSP,1989,168,STS-33
+"Musgrave, Franklin Story",male,1935,U.S.,civilian,4,MSP,1991,167,STS-44
+"Musgrave, Franklin Story",male,1935,U.S.,civilian,5,MSP,1993,260,STS-61
+"Musgrave, Franklin Story",male,1935,U.S.,civilian,6,MSP,1996,424,STS-80
+"Titov, Vladimir",male,1947,U.S.S.R/Russia,military,1,commander,1983,48,Soyuz T­8
+"Titov, Vladimir",male,1947,U.S.S.R/Russia,military,2,commander,1988,8782,3
+"Titov, Vladimir",male,1947,U.S.S.R/Russia,military,3,MSP,1995,198,STS­63
+"Titov, Vladimir",male,1947,U.S.S.R/Russia,military,4,commander,1997,259,24
+"Hauck, Frederick H.",male,1941,U.S.,military,1,pilot,1983,146,STS-7
+"Hauck, Frederick H.",male,1941,U.S.,military,2,commander,1984,191,STS-51-A
+"Hauck, Frederick H.",male,1941,U.S.,military,3,commander,1988,97,STS-26
+"Fabian, John M.",male,1939,U.S.,military,1,MSP,1983,146,STS-7
+"Fabian, John M.",male,1939,U.S.,military,2,MSP,1985,170,STS-51-G
+"Ride, Sally K.",female,1951,U.S.,civilian,1,MSP,1983,147,STS-7
+"Ride, Sally K.",female,1951,U.S.,civilian,2,MSP,1984,197,STS-41-G
+"Thagard, Norman E.",male,1943,U.S.,civilian,1,MSP,1983,147,STS-7
+"Thagard, Norman E.",male,1943,U.S.,civilian,2,MSP,1985,168,STS-51B
+"Thagard, Norman E.",male,1943,U.S.,civilian,3,MSP,1989,97,STS-30
+"Thagard, Norman E.",male,1943,U.S.,civilian,4,MSP,1992,192,STS-42
+"Thagard, Norman E.",male,1943,U.S.,civilian,5,MSP,1995,2760,18
+"Aleksandrov, Aleksandr",male,1943,U.S.S.R/Russia,civilian,1,flight engineer,1983,3586,Salyut 7
+"Aleksandrov, Aleksandr",male,1943,U.S.S.R/Russia,civilian,2,flight engineer,1987,3847,2
+"Brandenstein, Daniel C.",male,1943,U.S.,military,1,pilot,1983,145,STS-8
+"Brandenstein, Daniel C.",male,1943,U.S.,military,2,commander,1985,170,STS-51-G
+"Brandenstein, Daniel C.",male,1943,U.S.,military,3,commander,1990,261,STS-32
+"Brandenstein, Daniel C.",male,1943,U.S.,military,4,commander,1992,213,STS-49
+"Bluford, Guion S., Jr.",male,1942,U.S.,military,1,MSP,1983,31,STS-8
+"Bluford, Guion S., Jr.",male,1942,U.S.,military,2,MSP,1985,168,STS-61-A
+"Bluford, Guion S., Jr.",male,1942,U.S.,military,3,MSP,1991,199,STS-39
+"Bluford, Guion S., Jr.",male,1942,U.S.,military,4,MSP,1992,175,STS-53
+"Gardner, Dale A.",male,1948,U.S.,military,1,MSP,1983,145,STS-8
+"Gardner, Dale A.",male,1948,U.S.,military,2,MSP,1984,191,STS-51A
+"Thornton, William E.",male,1929,U.S.,civilian,1,MSP,1983,145,STS-8
+"Thornton, William E.",male,1929,U.S.,civilian,2,MSP,1985,169,STS-51-B
+"Shaw, Brewster H., Jr.",male,1945,U.S.,military,1,pilot,1983,247.75,STS-9
+"Shaw, Brewster H., Jr.",male,1945,U.S.,military,2,commander,1985,165,STS-61-B
+"Shaw, Brewster H., Jr.",male,1945,U.S.,military,3,commander,1989,121,STS-28
+"Parker, Robert A. R.",male,1936,U.S.,civilian,1,MSP,1983,248,STS-9
+"Parker, Robert A. R.",male,1936,U.S.,civilian,2,MSP,1990,215,STS-35
+"Lichtenberg, Byron Kurt",male,1948,U.S.,military,1,PSP,1983,247.94,Spacelab 1
+"Lichtenberg, Byron Kurt",male,1948,U.S.,military,2,PSP,1992,214.37,Atlas-1
+"Merbold, Ulf",male,1941,Germany,civilian,1,PSP,1983,248,STS-9
+"Merbold, Ulf",male,1941,Germany,civilian,2,PSP,1992,193,STS-42
+"Merbold, Ulf",male,1941,Germany,civilian,3,MSP,1994,756.6,Euromir 94
+"Gibson, Robert L.",male,1946,U.S.,military,1,pilot,1984,191.25,STS-41-B
+"Gibson, Robert L.",male,1946,U.S.,military,2,commander,1986,146,STS-61-C
+"Gibson, Robert L.",male,1946,U.S.,military,3,commander,1988,105,STS-27
+"Gibson, Robert L.",male,1946,U.S.,military,4,commander,1992,190.5,STS-47
+"Gibson, Robert L.",male,1946,U.S.,military,5,commander,1995,235.38,STS-71
+"McNair, Ronald E.",male,1950,U.S.,civilian,1,MSP,1984,191,STS-41-B
+"McNair, Ronald E.",male,1950,U.S.,civilian,2,MSP,1986,0,STS-51-L
+"Stewart, Robert L.",male,1942,U.S.,military,1,MSP,1984,191.5,STS-41 B
+"Stewart, Robert L.",male,1942,U.S.,military,2,MSP,1985,97.7,STS-51 J
+"McCandless, Bruce, II",male,1937,U.S.,military,1,MSP,1984,191,STS-41-B
+"McCandless, Bruce, II",male,1937,U.S.,military,2,MSP,1990,121,STS-31
+"Solovyov, Vladimir",male,1946,U.S.S.R/Russia,civilian,1,flight engineer,1984,5686,Salyut 7
+"Solovyov, Vladimir",male,1946,U.S.S.R/Russia,civilian,2,flight engineer,1986,3000,
+"Atkov, Oleg",male,1949,U.S.S.R/Russia,civilian,1,MSP,1984,5686,Salyut 7
+Rakesh Sharma,male,1949,India,military,1,pilot,1984,4365.8,Salyut 7
+"Scobee, Francis R.",male,1939,U.S.,military,1,pilot,1984,168,STS-41-C
+"Scobee, Francis R.",male,1939,U.S.,military,2,commander,1986,0,STS-51-L
+"Hart, Terry J.",male,1946,U.S.,civilian,1,MSP,1984,167.67,STS-41-C
+"Van Hoften, James D. A.",male,1944,U.S.,civilian,1,MSP,1984,167,STS-41 C
+"Van Hoften, James D. A.",male,1944,U.S.,civilian,2,MSP,1985,171,STS-51I
+"Nelson, George D.",male,1950,U.S.,civilian,1,MSP,1984,168,STS-41C
+"Nelson, George D.",male,1950,U.S.,civilian,2,MSP,1986,146,STS-61C
+"Nelson, George D.",male,1950,U.S.,civilian,3,MSP,1988,97,STS-26
+"Volk, Igor",male,1937,U.S.S.R/Russia,military,1,MSP,1984,283,Salyut 7
+"Coats, Michael L.",male,1952,U.S.,military,1,pilot,1984,145,STS-41-D
+"Coats, Michael L.",male,1952,U.S.,military,2,commander,1989,120,STS-29
+"Coats, Michael L.",male,1952,U.S.,military,3,commander,1991,199,STS-39
+"Mullane, Richard M.",male,1945,U.S.,military,1,MSP,1984,145,STS-41D
+"Mullane, Richard M.",male,1945,U.S.,military,2,MSP,1988,105,STS-27
+"Mullane, Richard M.",male,1945,U.S.,military,3,MSP,1990,106,STS-36
+"Hawley, Steven A.",male,1951,U.S.,civilian,1,MSP,1984,144,STS-41-D
+"Hawley, Steven A.",male,1951,U.S.,civilian,2,MSP,1986,146,STS-61-C
+"Hawley, Steven A.",male,1951,U.S.,civilian,3,MSP,1990,121,STS-31
+"Hawley, Steven A.",male,1951,U.S.,civilian,4,MSP,1997,239,STS-82
+"Hawley, Steven A.",male,1951,U.S.,civilian,5,MSP,1999,118,STS-93
+"Resnik, Judith A.",female,1949,U.S.,civilian,1,MSP,1984,144,STS-41-D
+"Resnik, Judith A.",female,1949,U.S.,civilian,2,MSP,1985,0,STS-51-L
+"Walker, Charles David",male,1948,U.S.,civilian,1,PSP,1984,144.98,STS-41D
+"Walker, Charles David",male,1948,U.S.,civilian,2,PSP,1985,168.15,STS-51D
+"Walker, Charles David",male,1948,U.S.,civilian,3,PSP,1985,165.16,STS-61B
+"McBride, Jon A.",male,1943,U.S.,military,1,pilot,1984,197,STS-41-G
+"Sullivan, Kathryn D.",female,1951,U.S.,civilian,1,MSP,1984,197.5,STS-41-G
+"Sullivan, Kathryn D.",female,1951,U.S.,civilian,2,MSP,1990,121,STS-31
+"Sullivan, Kathryn D.",female,1951,U.S.,civilian,3,MSP,1992,213.5,STS-45
+"Leestma, David C.",male,1949,U.S.,military,1,MSP,1984,197,STS-41-G
+"Leestma, David C.",male,1949,U.S.,military,2,MSP,1989,121,STS-28
+"Leestma, David C.",male,1949,U.S.,military,3,MSP,1992,214,STS-45
+"Scully-Power, Paul Desmond",male,1944,U.S.,civilian,1,PSP,1984,197.67,STS-41-G
+"Garneau, Marc Joseph Jean-Pierre",male,1949,Canada,military,1,PSP,1984,197,STS-41-G
+"Garneau, Marc Joseph Jean-Pierre",male,1949,Canada,military,2,MSP,1996,240.67,STS-77
+"Garneau, Marc Joseph Jean-Pierre",male,1949,Canada,military,3,MSP,2000,260,STS-97
+"Walker, David Mathieson",male,1944,U.S.,military,1,pilot,1984,191,STS-51-A
+"Walker, David Mathieson",male,1944,U.S.,military,2,commander,1989,96,STS-30
+"Walker, David Mathieson",male,1944,U.S.,military,3,commander,1992,175,STS-53
+"Walker, David Mathieson",male,1944,U.S.,military,4,commander,1995,44,STS-69
+"Fisher, Anna L.",female,1949,U.S.,civilian,1,MSP,1984,191,STS-51-A
+"Shriver, Loren J.",male,1944,U.S.,military,1,pilot,1985,73.5,STS-51-C
+"Shriver, Loren J.",male,1944,U.S.,military,2,commander,1990,121,STS-31
+"Shriver, Loren J.",male,1944,U.S.,military,3,commander,1992,191,STS-46
+"Onizuka, Ellison S.",male,1946,U.S.,military,1,MSP,1985,74,STS 51-C
+"Onizuka, Ellison S.",male,1946,U.S.,military,2,MSP,1986,0,STS 51-L
+"Buchli, James F.",male,1945,U.S.,military,1,MSP,1985,73.5,STS-51-C
+"Buchli, James F.",male,1945,U.S.,military,2,MSP,1985,168,STS-61-A
+"Buchli, James F.",male,1945,U.S.,military,3,MSP,1989,120,STS-29
+"Buchli, James F.",male,1945,U.S.,military,4,MSP,1991,128.5,STS-48
+"Payton, Gary Eugene",male,1948,U.S.,military,1,PSP,1985,73.675,STS-51C
+"Williams, Donald E.",male,1942,U.S.,military,1,pilot,1985,167,STS-51-D
+"Williams, Donald E.",male,1942,U.S.,military,2,commander,1989,119,STS-34
+"Seddon, Margaret Rhea",female,1947,U.S.,civilian,1,MSP,1985,168,STS-51-D
+"Seddon, Margaret Rhea",female,1947,U.S.,civilian,2,MSP,1991,218,STS-40
+"Seddon, Margaret Rhea",female,1947,U.S.,civilian,3,MSP,1993,336,STS-58
+"Griggs, S. David",male,1947,U.S.,civilian,1,MSP,1985,168,STS-51-D
+"Hoffman, Jeffrey A.",male,1944,U.S.,civilian,1,MSP,1985,167,STS-51-D
+"Hoffman, Jeffrey A.",male,1944,U.S.,civilian,2,MSP,1990,215,STS-35
+"Hoffman, Jeffrey A.",male,1944,U.S.,civilian,3,MSP,1992,191,STS-46
+"Hoffman, Jeffrey A.",male,1944,U.S.,civilian,4,MSP,1993,259,STS-61
+"Hoffman, Jeffrey A.",male,1944,U.S.,civilian,5,MSP,1996,377,STS-75
+"Garn, Edwin Jacob",male,1932,U.S.,military,1,PSP,1985,168.15,STS-51D
+"Gregory, Frederick D.",male,1941,U.S.,military,1,pilot,1985,168,STS-51-B
+"Gregory, Frederick D.",male,1941,U.S.,military,2,commander,1989,120,STS-33
+"Gregory, Frederick D.",male,1941,U.S.,military,3,commander,1991,166,STS-44
+"Lind, Don L.",male,1930,U.S.,military,1,MSP,1985,168,STS-51-B
+"Lodewijk, van der Berg",male,1932,U.S.,civilian,1,PSP,1985,168.525,Spacelab-3
+"Wang, Taylor Gun-Jin",male,1940,U.S.,civilian,1,PSP,1985,168.525,Spacelab-3
+"Creighton, John O.",male,1943,U.S.,military,1,pilot,1985,170,STS-51-G
+"Creighton, John O.",male,1943,U.S.,military,2,commander,1990,106,STS-36
+"Creighton, John O.",male,1943,U.S.,military,3,commander,1991,128,STS-48
+"Nagel, Steven R.",male,1946,U.S.,military,1,MSP,1985,170,STS-51G
+"Nagel, Steven R.",male,1946,U.S.,military,2,pilot,1985,169,STS-61A
+"Nagel, Steven R.",male,1946,U.S.,military,3,commander,1991,143,STS-37
+"Nagel, Steven R.",male,1946,U.S.,military,4,commander,1993,240,STS-55
+"Lucid, Shannon W.",female,1943,U.S.,civilian,1,MSP,1985,169,STS-51-G
+"Lucid, Shannon W.",female,1943,U.S.,civilian,2,MSP,1989,119,STS-34
+"Lucid, Shannon W.",female,1943,U.S.,civilian,3,MSP,1991,213,STS-43
+"Lucid, Shannon W.",female,1943,U.S.,civilian,4,MSP,1993,336,STS-58
+"Lucid, Shannon W.",female,1943,U.S.,civilian,5,MSP,1996,4516,22
+"Baudry, Patrick",male,1946,France,military,1,PSP,1985,169.63,STS-51G
+"Al-saud, Sultan bin Salman",male,1956,Saudi Arabia,civilian,1,PSP,1985,170,STS-51G
+"Bridges, Roy D., Jr.",male,1943,U.S.,military,1,pilot,1985,190,STS-51-F
+"Henize, Karl G.",male,1926,U.S.,civilian,1,MSP,1985,190,STS-51-F
+"England, Anthony W.",male,1942,U.S.,civilian,1,MSP,1985,190,STS-51-F
+"Acton, Loren Wilbur",male,1936,U.S.,civilian,1,PSP,1978,190.94,Spacelab-2
+"Bartoe, John-David Francis",male,1944,U.S.,civilian,1,PSP,1978,190.94,STS-51-F
+"Covey, Richard O.",male,1946,U.S.,military,1,pilot,1985,170,STS-51-I
+"Covey, Richard O.",male,1946,U.S.,military,2,pilot,1988,97,STS-26
+"Covey, Richard O.",male,1946,U.S.,military,3,commander,1990,118,STS-38
+"Covey, Richard O.",male,1946,U.S.,military,4,commander,1993,260,STS-61
+"Lounge, John M.",male,1946,U.S.,civilian,1,MSP,1985,170,STS-51-I
+"Lounge, John M.",male,1946,U.S.,civilian,2,MSP,1988,97,STS-26
+"Lounge, John M.",male,1946,U.S.,civilian,3,MSP,1990,215,STS-35
+"Fisher, William F.",male,1946,U.S.,civilian,1,MSP,1985,170,STS-51-I
+"Vasyutin, Vladimir",male,1952,U.S.S.R/Russia,military,1,commander,1985,1557,Salyut 7
+"Volkov, Alexander",male,1948,U.S.S.R/Russia,military,1,MSP,1985,1557,Salyut 7
+"Volkov, Alexander",male,1948,U.S.S.R/Russia,military,2,MSP,1989,3635,4
+"Volkov, Alexander",male,1948,U.S.S.R/Russia,military,3,MSP,1992,4202,10
+"Grabe, Ronald J.",male,1945,U.S.,military,1,pilot,1985,97.73,STS-51-J
+"Grabe, Ronald J.",male,1945,U.S.,military,2,pilot,1989,97,STS-30
+"Grabe, Ronald J.",male,1945,U.S.,military,3,commander,1992,193,STS-42
+"Grabe, Ronald J.",male,1945,U.S.,military,4,commander,1993,239,STS-57
+"Hilmers, David C.",male,1950,U.S.,military,1,MSP,1985,97,STS-51-J
+"Hilmers, David C.",male,1950,U.S.,military,2,MSP,1988,97,STS-26
+"Hilmers, David C.",male,1950,U.S.,military,3,MSP,1990,106,STS-36
+"Hilmers, David C.",male,1950,U.S.,military,4,MSP,1992,193,STS-42
+"Pailes, William Arthur",male,1936,U.S.,military,1,PSP,1985,98.11,STS-51-J
+"Dunbar, Bonnie J.",female,1949,U.S.,civilian,1,MSP,1985,168,STS-61-A
+"Dunbar, Bonnie J.",female,1949,U.S.,civilian,2,MSP,1990,261,STS-32
+"Dunbar, Bonnie J.",female,1949,U.S.,civilian,3,MSP,1992,331,STS-50
+"Dunbar, Bonnie J.",female,1949,U.S.,civilian,4,MSP,1995,235,STS-71
+"Dunbar, Bonnie J.",female,1949,U.S.,civilian,5,MSP,1998,211,STS-89
+"Furrer, Reinhard Alfred",male,1940,Germany,civilian,1,PSP,1985,168.73,STS-61A
+"Messerschmid, Ernst Willi",male,1945,Germany,military,1,PSP,1985,168.73,STS-61A
+"Ockels, Wubbo Johannes",male,1946,Netherland,civilian,1,PSP,1985,168.73,STS-61-A
+"O'Connor, Bryan D.",male,1946,U.S.,military,1,pilot,1985,165,STS-61B Atlantis
+"O'Connor, Bryan D.",male,1946,U.S.,military,2,commander,1991,218,STS-40 Columbia
+"Ross, Jerry L.",male,1948,U.S.,military,1,MSP,1985,165,STS-61
+"Ross, Jerry L.",male,1948,U.S.,military,2,MSP,1988,105,STS-27
+"Ross, Jerry L.",male,1948,U.S.,military,3,MSP,1991,143,STS-37
+"Ross, Jerry L.",male,1948,U.S.,military,4,MSP,1993,239,STS-55
+"Ross, Jerry L.",male,1948,U.S.,military,5,MSP,1995,129,STS-74
+"Ross, Jerry L.",male,1948,U.S.,military,6,MSP,1998,283,STS-88
+"Ross, Jerry L.",male,1948,U.S.,military,7,MSP,2002,259,STS-110
+"Cleave, Mary L.",female,1947,U.S.,civilian,1,MSP,1985,97,STS-30
+"Cleave, Mary L.",female,1947,U.S.,civilian,2,MSP,1989,165,STS-61-B
+"Spring, Sherwood C.",male,1944,U.S.,military,1,MSP,1985,165,STS-61-B
+"Neri Vela, Rodolfl",male,1952,Mexico,civilian,1,PSP,1985,165.07,STS-61-B
+"Bolden, Charles F., Jr.",male,1946,U.S.,military,1,pilot,1986,74,STS-61-C
+"Bolden, Charles F., Jr.",male,1946,U.S.,military,2,pilot,1990,121,STS-31
+"Bolden, Charles F., Jr.",male,1946,U.S.,military,3,commander,1992,214,STS-45
+"Bolden, Charles F., Jr.",male,1946,U.S.,military,4,commander,1994,199,STS-60
+"Chang-Diaz, Franklin R.",male,1950,U.S.,civilian,1,MSP,1986,146,STS-61-C
+"Chang-Diaz, Franklin R.",male,1950,U.S.,civilian,2,MSP,1989,120,STS-34
+"Chang-Diaz, Franklin R.",male,1950,U.S.,civilian,3,MSP,1992,191,STS-46
+"Chang-Diaz, Franklin R.",male,1950,U.S.,civilian,4,MSP,1994,199,STS-60
+"Chang-Diaz, Franklin R.",male,1950,U.S.,civilian,5,MSP,1996,377,STS-75
+"Chang-Diaz, Franklin R.",male,1950,U.S.,civilian,6,MSP,1998,236,STS-91
+"Chang-Diaz, Franklin R.",male,1950,U.S.,civilian,7,MSP,2002,333,STS-111
+"Cenker, Robert Joseph",male,1948,U.S.,civilian,1,PSP,1986,146.42,STS-61C
+"Nelson, William Clarence",male,1942,U.S.,civilian,1,PSP,1986,6.03,STS-61C
+"Smith, Michael John",male,1945,U.S.,military,1,pilot,1986,0.61,STS-51L
+"Jarvis, Gregory Bruce",male,1944,U.S.,civilian,1,PSP,1986,0.61,STS-51L
+"McAuliffe, Sharon Christa Corrigan",female,1948,U.S.,civilian,1,PSP,1986,0.61,STS-51L
+"Laveykin, Aleksandr",male,1951,U.S.S.R/Russia,civilian,1,flight engineer,1987,4179,2
+"Viktorenko, Aleksandr",male,1947,U.S.S.R/Russia,military,1,commander,1987,191,1
+"Viktorenko, Aleksandr",male,1947,U.S.S.R/Russia,military,2,commander,1990,3990,5
+"Viktorenko, Aleksandr",male,1947,U.S.S.R/Russia,military,3,commander,1992,3494,11
+"Viktorenko, Aleksandr",male,1947,U.S.S.R/Russia,military,4,commander,1994,4061,17
+"Faris, M. Achmed",male,1951,Syria,military,1,MSP,1987,191,1
+"Manarov, Musa",male,1951,U.S.S.R/Russia,military,1,flight engineer,1987,8782,3
+"Manarov, Musa",male,1951,U.S.S.R/Russia,military,2,flight engineer,1990,4201,8
+"Levchenko, Anatoli",male,1941,U.S.S.R/Russia,military,1,MSP,1987,189,Soyuz TM­4/3
+"Solovyev, Anatoly",male,1948,U.S.S.R/Russia,military,1,commander,1988,236,2
+"Solovyev, Anatoly",male,1948,U.S.S.R/Russia,military,2,commander,1990,4297,6
+"Solovyev, Anatoly",male,1948,U.S.S.R/Russia,military,3,commander,1993,4533,12
+"Solovyev, Anatoly",male,1948,U.S.S.R/Russia,military,4,commander,1995,1811,19
+"Solovyev, Anatoly",male,1948,U.S.S.R/Russia,military,5,commander,1997,4745,24
+"Aleksandrov, Aleksandr",male,1951,Bulgaria,military,1,pilot,1988,47,2
+"Polyakov, Valeri",male,1942,U.S.S.R/Russia,civilian,1,flight engineer,1988,5782,3
+"Polyakov, Valeri",male,1942,U.S.S.R/Russia,civilian,2,MSP,1994,10505,15
+"Mohmand, Abdul Ahad",male,1959,Afghanistan,military,1,MSP,1988,212,3
+"Krikalev, Sergei",male,1958,U.S.S.R/Russia,civilian,1,flight engineer,1988,3635,4
+"Krikalev, Sergei",male,1958,U.S.S.R/Russia,civilian,2,flight engineer,1991,7484,9
+"Krikalev, Sergei",male,1958,U.S.S.R/Russia,civilian,3,flight engineer,1994,199,STS­60
+"Krikalev, Sergei",male,1958,U.S.S.R/Russia,civilian,4,flight engineer,1998,283,STS­88
+"Krikalev, Sergei",male,1958,U.S.S.R/Russia,civilian,5,flight engineer,2000,3383,1
+"Krikalev, Sergei",male,1958,U.S.S.R/Russia,civilian,6,commander,2005,4296,11
+"Gardner, Guy S.",male,1948,U.S.,military,1,pilot,1988,105,STS-27
+"Gardner, Guy S.",male,1948,U.S.,military,2,pilot,1990,215,STS-35
+"Shepherd, William M.",male,1949,U.S.,military,1,MSP,1988,105,STS-27
+"Shepherd, William M.",male,1949,U.S.,military,2,MSP,1990,98,STS-41
+"Shepherd, William M.",male,1949,U.S.,military,3,MSP,1992,237,STS-52
+"Shepherd, William M.",male,1949,U.S.,military,4,flight engineer,2000,3281,1
+"Blaha, John E.",male,1942,U.S.,military,1,pilot,1989,120,STS-29
+"Blaha, John E.",male,1942,U.S.,military,2,pilot,1989,120,STS-33
+"Blaha, John E.",male,1942,U.S.,military,3,commander,1991,213,STS-43
+"Blaha, John E.",male,1942,U.S.,military,4,commander,1993,336,STS-58
+"Blaha, John E.",male,1942,U.S.,military,5,MSP,1996,3077,22
+"Springer, Robert C.",male,1942,U.S.,military,1,MSP,1989,119,STS-29
+"Springer, Robert C.",male,1942,U.S.,military,2,MSP,1990,118,STS-38
+"Bagian, James P.",male,1952,U.S.,civilian,1,MSP,1989,120,STS-29
+"Bagian, James P.",male,1952,U.S.,civilian,2,MSP,1991,218,STS-40
+"Lee, Mark C.",male,1952,U.S.,military,1,MSP,1989,97,STS-30
+"Lee, Mark C.",male,1952,U.S.,military,2,MSP,1992,190,STS-47
+"Lee, Mark C.",male,1952,U.S.,military,3,MSP,1994,262,STS-64
+"Lee, Mark C.",male,1952,U.S.,military,4,MSP,1997,239,STS-82
+"Richards, Richard N.",male,1946,U.S.,military,1,pilot,1989,120,STS-28
+"Richards, Richard N.",male,1946,U.S.,military,2,commander,1990,96,STS-41
+"Richards, Richard N.",male,1946,U.S.,military,3,commander,1992,336,STS-50
+"Richards, Richard N.",male,1946,U.S.,military,4,commander,1994,242,STS-64
+"Adamson, James C.",male,1946,U.S.,military,1,MSP,1989,121,STS-28
+"Adamson, James C.",male,1946,U.S.,military,2,MSP,1991,213,STS-43
+"Brown, Mark N.",male,1951,U.S.,military,1,MSP,1989,121,STS-28
+"Brown, Mark N.",male,1951,U.S.,military,2,MSP,1991,128,STS-48
+"McCulley, Michael J.",male,1943,U.S.,military,1,pilot,1989,119,STS-34
+"Baker, Ellen S.",female,1953,U.S.,civilian,1,MSP,1989,120,STS-34
+"Baker, Ellen S.",female,1953,U.S.,civilian,2,MSP,1992,331,STS-50
+"Baker, Ellen S.",female,1953,U.S.,civilian,3,MSP,1995,235,STS-71
+"Carter, Manley Lanier, Jr.",male,1947,U.S.,military,1,MSP,1989,120,STS-33
+"Thornton, Kathryn C.",female,1952,U.S.,civilian,1,MSP,1989,120,STS-33
+"Thornton, Kathryn C.",female,1952,U.S.,civilian,2,MSP,1992,213,STS-49
+"Thornton, Kathryn C.",female,1952,U.S.,civilian,3,MSP,1993,264,STS-61
+"Thornton, Kathryn C.",female,1952,U.S.,civilian,4,MSP,1995,360,STS-73
+"Wetherbee, James D.",male,1952,U.S.,military,1,pilot,1990,261,STS-32
+"Wetherbee, James D.",male,1952,U.S.,military,2,commander,1992,236,STS-52
+"Wetherbee, James D.",male,1952,U.S.,military,3,commander,1995,198,STS-63
+"Wetherbee, James D.",male,1952,U.S.,military,4,commander,1997,259,STS-86
+"Wetherbee, James D.",male,1952,U.S.,military,5,commander,2001,307,STS-102
+"Wetherbee, James D.",male,1952,U.S.,military,6,commander,2002,330,STS-113
+"Ivins, Marsha S.",female,1951,U.S.,civilian,1,MSP,1990,261,STS-32
+"Ivins, Marsha S.",female,1951,U.S.,civilian,2,MSP,1992,191,STS-46
+"Ivins, Marsha S.",female,1951,U.S.,civilian,3,MSP,1994,335,STS-62
+"Ivins, Marsha S.",female,1951,U.S.,civilian,4,MSP,1997,244,STS-81
+"Ivins, Marsha S.",female,1951,U.S.,civilian,5,MSP,2001,309,STS-98
+"Low, G. David",male,1956,U.S.,civilian,1,MSP,1990,261,STS-32
+"Low, G. David",male,1956,U.S.,civilian,2,MSP,1991,213,STS-43
+"Low, G. David",male,1956,U.S.,civilian,3,MSP,1993,239,STS-57
+"Balandin, Aleksandr",male,1953,U.S.S.R/Russia,civilian,1,flight engineer,1990,4297,6
+"Casper, John H.",male,1943,U.S.,military,1,pilot,1990,106,STS-36
+"Casper, John H.",male,1943,U.S.,military,2,commander,1993,143,STS-54
+"Casper, John H.",male,1943,U.S.,military,3,commander,1994,335,STS-62
+"Casper, John H.",male,1943,U.S.,military,4,commander,1996,241,STS-77
+"Thuot, Pierre J.",male,1955,U.S.,military,1,MSP,1990,106,STS-36
+"Thuot, Pierre J.",male,1955,U.S.,military,2,MSP,1992,213,STS-49
+"Thuot, Pierre J.",male,1955,U.S.,military,3,MSP,1994,335,STS-62
+"Manakov, Gennadi",male,1950,U.S.S.R/Russia,military,1,commander,1990,3140,7
+"Manakov, Gennadi",male,1950,U.S.S.R/Russia,military,2,commander,1993,4296,13
+"Cabana, Robert D.",male,1949,U.S.,military,1,pilot,1990,98,STS-41
+"Cabana, Robert D.",male,1949,U.S.,military,2,pilot,1992,175,STS-53
+"Cabana, Robert D.",male,1949,U.S.,military,3,commander,1994,354,STS-65
+"Cabana, Robert D.",male,1949,U.S.,military,4,commander,1998,283,STS-88
+"Melnick, Bruce E.",male,1949,U.S.,military,1,MSP,1990,98,STS-41
+"Melnick, Bruce E.",male,1949,U.S.,military,2,MSP,1992,213,STS-49
+"Akers, Thomas D.",male,1951,U.S.,military,1,MSP,1990,98,STS-41
+"Akers, Thomas D.",male,1951,U.S.,military,2,MSP,1992,213,STS-49
+"Akers, Thomas D.",male,1951,U.S.,military,3,MSP,1993,260,STS-61
+"Akers, Thomas D.",male,1951,U.S.,military,4,MSP,1996,243,STS-79
+"Culbertson, Frank L., Jr.",male,1949,U.S.,military,1,pilot,1990,118,STS-38
+"Culbertson, Frank L., Jr.",male,1949,U.S.,military,2,commander,1993,236,STS-51
+"Culbertson, Frank L., Jr.",male,1949,U.S.,military,3,commander,2001,3093,3
+"Meade, Carl J.",male,1950,U.S.,military,1,MSP,1990,117,STS-38
+"Meade, Carl J.",male,1950,U.S.,military,2,MSP,1992,331,STS-50
+"Meade, Carl J.",male,1950,U.S.,military,3,MSP,1994,262,STS-64
+"Gemar, Charles D.",male,1955,U.S.,military,1,MSP,1990,118,STS-38
+"Gemar, Charles D.",male,1955,U.S.,military,2,MSP,1991,128.5,STS-48
+"Gemar, Charles D.",male,1955,U.S.,military,3,MSP,1994,335,STS-62
+"Durrance, Samuel Thornton",male,1943,U.S.,civilian,1,PSP,1990,215.15,Astro-1
+"Durrance, Samuel Thornton",male,1943,U.S.,civilian,2,PSP,1995,399.54,Astro-2
+"Parise, Ronald Anthony",male,1951,U.S.,civilian,1,PSP,1990,215.15,STS-35
+"Parise, Ronald Anthony",male,1951,U.S.,civilian,2,PSP,1995,399.54,STS-67
+"Afanasyev, Viktor Mikhaylovich",male,1948,U.S.S.R/Russia,military,1,commander,1991,4201,8
+"Afanasyev, Viktor Mikhaylovich",male,1948,U.S.S.R/Russia,military,2,commander,1994,4368,15
+"Afanasyev, Viktor Mikhaylovich",male,1948,U.S.S.R/Russia,military,3,commander,1999,4532,27
+"Afanasyev, Viktor Mikhaylovich",male,1948,U.S.S.R/Russia,military,4,commander,2001,236.208,Soyuz TM­33/32
+"Akiyama, Toyohiro",male,1942,Japan,civilian,1,Other (Journalist),1990,189.9,Soyuz TM-11/10
+"Cameron, Kenneth D.",male,1949,U.S.,military,1,pilot,1991,143,STS-37
+"Cameron, Kenneth D.",male,1949,U.S.,military,2,commander,1993,222,STS-56
+"Cameron, Kenneth D.",male,1949,U.S.,military,3,commander,1995,196,STS-74
+"Godwin, Linda M.",female,1952,U.S.,civilian,1,MSP,1991,143.5,STS-37
+"Godwin, Linda M.",female,1952,U.S.,civilian,2,MSP,1994,269.82,STS-59
+"Godwin, Linda M.",female,1952,U.S.,civilian,3,MSP,1996,221.67,STS-76
+"Godwin, Linda M.",female,1952,U.S.,civilian,4,MSP,2001,283,STS-108
+"Apt, Jerome",male,1949,U.S.,civilian,1,MSP,1991,143.5,STS-37
+"Apt, Jerome",male,1949,U.S.,civilian,2,MSP,1992,190.5,STS-47
+"Apt, Jerome",male,1949,U.S.,civilian,3,MSP,1994,270,STS-59
+"Apt, Jerome",male,1949,U.S.,civilian,4,MSP,1996,243,STS-79
+"Hammond, L. Blaine, Jr.",male,1952,U.S.,military,1,pilot,1991,199,STS-39
+"Hammond, L. Blaine, Jr.",male,1952,U.S.,military,2,pilot,1994,262,STS-64
+"Harbaugh, Gregory J.",male,1956,U.S.,civilian,1,MSP,1991,199,STS-39
+"Harbaugh, Gregory J.",male,1956,U.S.,civilian,2,MSP,1993,143,STS-54
+"Harbaugh, Gregory J.",male,1956,U.S.,civilian,3,MSP,1995,235,STS-71
+"Harbaugh, Gregory J.",male,1956,U.S.,civilian,4,MSP,1997,239,STS-82
+"McMonagle, Donald R.",male,1952,U.S.,military,1,MSP,1991,199,STS-39
+"McMonagle, Donald R.",male,1952,U.S.,military,2,pilot,1993,143,STS-54
+"McMonagle, Donald R.",male,1952,U.S.,military,3,commander,1994,262,STS-66
+"Veach, Charles Lacy",male,1944,U.S.,civilian,1,MSP,1991,192,STS-39
+"Veach, Charles Lacy",male,1944,U.S.,civilian,2,MSP,1992,240,STS-52
+"Hieb, Richard J.",male,1955,U.S.,civilian,1,MSP,1991,199,STS-39
+"Hieb, Richard J.",male,1955,U.S.,civilian,2,MSP,1992,213,STS-49
+"Hieb, Richard J.",male,1955,U.S.,civilian,3,MSP,1994,353,STS-65
+"Artsebarsky, Anatoly",male,1956,U.S.S.R/Russia,military,1,commander,1991,3471,9
+Helen Sharman,female,1963,U.K.,civilian,1,MSP,1991,189.22,Soyuz TM-12/11
+"Gutierrez, Sidney M.",male,1951,U.S.,military,1,MSP,1991,218,STS-40
+"Gutierrez, Sidney M.",male,1951,U.S.,military,2,commander,1994,269,STS-59
+"Jernigan, Tamara E.",female,1959,U.S.,civilian,1,MSP,1991,218,STS-40
+"Jernigan, Tamara E.",female,1959,U.S.,civilian,2,MSP,1992,236,STS-52
+"Jernigan, Tamara E.",female,1959,U.S.,civilian,3,MSP,1995,399,STS-67
+"Jernigan, Tamara E.",female,1959,U.S.,civilian,4,MSP,1996,423,STS-80
+"Jernigan, Tamara E.",female,1959,U.S.,civilian,5,MSP,1999,235,STS-96
+"Gaffney, Andrew",male,1946,U.S.,civilian,1,PSP,1991,218,STS-40
+"Hughes-Fulford, Millie Elizabeth",female,1945,U.S.,civilian,1,PSP,1991,218.37,STS-40
+"Baker, Michael A.",male,1953,U.S.,military,1,pilot,1991,213,STS-43
+"Baker, Michael A.",male,1953,U.S.,military,2,pilot,1992,237,STS-52
+"Baker, Michael A.",male,1953,U.S.,military,3,commander,1994,270,STS-68
+"Baker, Michael A.",male,1953,U.S.,military,4,commander,1997,245,STS-81
+"Reightler, Kenneth S., Jr.",male,1951,U.S.,military,1,pilot,1991,120,STS-48
+"Reightler, Kenneth S., Jr.",male,1951,U.S.,military,2,pilot,1994,192,STS-60
+"Aubakirov, Toktar",male,1946,U.S.S.R/Russia,military,1,MSP,1991,190,10
+"Viehbock, Franz",male,1960,Austria,civilian,1,MSP,1991,190.2,Soyuz TM13/12
+"Henricks, Terence T.",male,1952,U.S.,military,1,pilot,1991,166,STS-44
+"Henricks, Terence T.",male,1952,U.S.,military,2,pilot,1993,239,STS-55
+"Henricks, Terence T.",male,1952,U.S.,military,3,commander,1995,214,STS-70
+"Henricks, Terence T.",male,1952,U.S.,military,4,commander,1996,405,STS-78
+"Voss, James S.",male,1949,U.S.,military,1,MSP,1991,166,STS-44
+"Voss, James S.",male,1949,U.S.,military,2,MSP,1992,175,STS-53
+"Voss, James S.",male,1949,U.S.,military,3,MSP,1995,260,STS-69
+"Voss, James S.",male,1949,U.S.,military,4,MSP,2000,236,STS-101
+"Voss, James S.",male,1949,U.S.,military,5,MSP,2001,163,2
+"Runco, Mario, Jr.",male,1952,U.S.,military,1,MSP,1991,166,STS-44
+"Runco, Mario, Jr.",male,1952,U.S.,military,2,MSP,1993,143,STS-54
+"Runco, Mario, Jr.",male,1952,U.S.,military,3,MSP,1996,240,STS-77
+"Hennen, Thomas John",male,1952,U.S.,military,1,PSP,1991,167.11,STS-44
+"Oswald, Stephen S.",male,1951,U.S.,military,1,pilot,1992,193,STS-42
+"Oswald, Stephen S.",male,1951,U.S.,military,2,pilot,1993,222,STS-67
+"Oswald, Stephen S.",male,1951,U.S.,military,3,commander,1995,399,STS-42
+"Readdy, William F.",male,1952,U.S.,civilian,1,MSP,1992,193,STS-42
+"Readdy, William F.",male,1952,U.S.,civilian,2,pilot,1993,236,STS-51
+"Readdy, William F.",male,1952,U.S.,civilian,3,commander,1996,243,STS-79
+"Bondar, Roberta Lynn",female,1945,Canada,civilian,1,PSP,1992,193.77,STS-42
+"Kaleri, Aleksandr",male,1956,U.S.S.R/Russia,civilian,1,flight engineer,1992,3494,11
+"Kaleri, Aleksandr",male,1956,U.S.S.R/Russia,civilian,2,flight engineer,1996,4721,21
+"Kaleri, Aleksandr",male,1956,U.S.S.R/Russia,civilian,3,flight engineer,2000,1747,28
+"Kaleri, Aleksandr",male,1956,U.S.S.R/Russia,civilian,4,flight engineer,2003,4674,8
+"Kaleri, Aleksandr",male,1956,U.S.S.R/Russia,civilian,5,flight engineer,2010,3824,25
+"Flade, Klaus-Dietrich",male,1952,Germany,military,1,MSP,1992,189.95,Soyuz TM-14/13
+"Duffy, Brian",male,1953,U.S.,military,1,pilot,1992,214,STS-45
+"Duffy, Brian",male,1953,U.S.,military,2,pilot,1993,240,STS-57
+"Duffy, Brian",male,1953,U.S.,military,3,commander,1996,214,STS-72
+"Duffy, Brian",male,1953,U.S.,military,4,commander,2000,310,STS-92
+"Foale, C. Michael",male,1957,U.S.,civilian,1,MSP,1992,214,STS-45
+"Foale, C. Michael",male,1957,U.S.,civilian,2,MSP,1993,222,STS-56
+"Foale, C. Michael",male,1957,U.S.,civilian,3,MSP,1995,198.5,STS-63
+"Foale, C. Michael",male,1957,U.S.,civilian,4,MSP,1997,3470,23
+"Foale, C. Michael",male,1957,U.S.,civilian,5,MSP,1999,191,STS-103
+"Foale, C. Michael",male,1957,U.S.,civilian,6,commander,2003,4674.5,8
+"Frimout, David",male,1941,Belgium,civilian,1,PSP,1992,214.15,STS-45
+"Chilton, Kevin P.",male,1954,U.S.,military,1,pilot,1992,213,STS-49
+"Chilton, Kevin P.",male,1954,U.S.,military,2,pilot,1994,270,STS-59
+"Chilton, Kevin P.",male,1954,U.S.,military,3,commander,1996,221,STS-76
+"Bowersox, Kenneth D.",male,1956,U.S.,military,1,pilot,1992,331,STS-50
+"Bowersox, Kenneth D.",male,1956,U.S.,military,2,pilot,1993,260,STS-61
+"Bowersox, Kenneth D.",male,1956,U.S.,military,3,commander,1995,382,STS-73
+"Bowersox, Kenneth D.",male,1956,U.S.,military,4,commander,1997,239,STS-82
+"Bowersox, Kenneth D.",male,1956,U.S.,military,5,commander,2002,3865,6
+"DeLucas, Lawrence James",male,1950,U.S.,civilian,1,PSP,1992,331.53,STS-50
+"Trinh, Eugene Huu-Chau",male,1950,U.S.,civilian,1,PSP,1992,331.53,STS-50
+"Avdeyev, Sergei",male,1956,U.S.S.R/Russia,civilian,1,flight engineer,1993,4533,12
+"Avdeyev, Sergei",male,1956,U.S.S.R/Russia,civilian,2,flight engineer,1995,4297,20
+"Avdeyev, Sergei",male,1956,U.S.S.R/Russia,civilian,3,flight engineer,1998,9110,26
+"Tognini, Michel",male,1949,France,military,1,MSP,1992,331,Antares
+"Tognini, Michel",male,1949,France,military,2,MSP,1999,118.8,STS-93
+"Allen, Andrew M.",male,1955,U.S.,military,1,pilot,1992,191,STS-46
+"Allen, Andrew M.",male,1955,U.S.,military,2,pilot,1994,335,STS-62
+"Allen, Andrew M.",male,1955,U.S.,military,3,commander,1996,378,STS-75
+"Nicollier, Claude",male,1944,Switzerland,civilian,1,PSP,1992,191.25,STS-46
+"Nicollier, Claude",male,1944,Switzerland,civilian,2,PSP,1993,259.97,STS-61-A
+"Nicollier, Claude",male,1944,Switzerland,civilian,3,MSP,1996,541.67,STS-75
+"Nicollier, Claude",male,1944,Switzerland,civilian,4,MSP,1999,191.18,STS-103
+Franco Malerba,male,1946,Italy,civilian,1,PSP,1992,191.25,sts-46
+"Brown, Curtis L., Jr.",male,1956,U.S.,military,1,pilot,1992,190.5,STS-47
+"Brown, Curtis L., Jr.",male,1956,U.S.,military,2,pilot,1994,262.5,STS-66
+"Brown, Curtis L., Jr.",male,1956,U.S.,military,3,pilot,1996,240.5,STS-77
+"Brown, Curtis L., Jr.",male,1956,U.S.,military,4,commander,1997,284.5,STS-85
+"Brown, Curtis L., Jr.",male,1956,U.S.,military,5,commander,1998,213.5,STS-95
+"Brown, Curtis L., Jr.",male,1956,U.S.,military,6,commander,1999,191,STS-103
+"Davis, Nancy Jan",female,1953,U.S.,civilian,1,MSP,1992,190.5,STS-47
+"Davis, Nancy Jan",female,1953,U.S.,civilian,2,MSP,1994,199,STS-60
+"Davis, Nancy Jan",female,1953,U.S.,civilian,3,MSP,1997,284,STS-85
+"Jemison, Mae C.",female,1956,U.S.,civilian,1,MSP,1992,190.5,STS-47
+"Mohri, Mamoru",male,1948,Japan,civilian,1,PSP,1992,190.5,STS-47
+"Mohri, Mamoru",male,1948,Japan,civilian,2,MSP,2000,190.5,STS-99
+Steven MacLean,male,1954,Canada,military,1,PSP,1992,236.93,STS-52
+Steven MacLean,male,1954,Canada,military,2,MSP,2006,283.1,STS-115
+"Clifford, Michael R.",male,1952,U.S.,military,1,MSP,1992,175,STS-53
+"Clifford, Michael R.",male,1952,U.S.,military,2,MSP,1994,270,STS-59
+"Clifford, Michael R.",male,1952,U.S.,military,3,MSP,1996,221,STS-76
+"Helms, Susan J.",female,1958,U.S.,military,1,MSP,1993,143,STS-54
+"Helms, Susan J.",female,1958,U.S.,military,2,MSP,1994,262,STS-64
+"Helms, Susan J.",female,1958,U.S.,military,3,MSP,1996,405,STS-78
+"Helms, Susan J.",female,1958,U.S.,military,4,MSP,2000,237,STS-101
+"Helms, Susan J.",female,1958,U.S.,military,5,flight engineer,2001,4007,2
+"Poleshchuk, Aleksandr",male,1953,U.S.S.R/Russia,military,1,flight engineer,1993,4296,13
+"Cockrell, Kenneth D.",male,1950,U.S.,civilian,1,MSP,1993,222,STS-56
+"Cockrell, Kenneth D.",male,1950,U.S.,civilian,2,pilot,1995,260.5,STS-69
+"Cockrell, Kenneth D.",male,1950,U.S.,civilian,3,commander,1996,424,STS-80
+"Cockrell, Kenneth D.",male,1950,U.S.,civilian,4,commander,2001,309,STS-98
+"Cockrell, Kenneth D.",male,1950,U.S.,civilian,5,commander,2002,333,STS-111
+"Ochoa, Ellen",female,1958,U.S.,civilian,1,MSP,1993,222,STS-56
+"Ochoa, Ellen",female,1958,U.S.,civilian,2,MSP,1994,263,STS-66
+"Ochoa, Ellen",female,1958,U.S.,civilian,3,MSP,1999,235,STS-96
+"Ochoa, Ellen",female,1958,U.S.,civilian,4,MSP,2002,260,STS-110
+"Precourt, Charles J., Jr.",male,1955,U.S.,military,1,MSP,1993,240,STS-55
+"Precourt, Charles J., Jr.",male,1955,U.S.,military,2,pilot,1995,235,STS-71
+"Precourt, Charles J., Jr.",male,1955,U.S.,military,3,commander,1997,221,STS-84
+"Precourt, Charles J., Jr.",male,1955,U.S.,military,4,commander,1998,235,STS-91
+"Harris, Bernard A., Jr.",male,1956,U.S.,civilian,1,MSP,1993,239,STS-55
+"Harris, Bernard A., Jr.",male,1956,U.S.,civilian,2,MSP,1995,198,STS-63
+"Walter, Ulrich",male,1954,Germany,civilian,1,PSP,1993,239.67,STS-55
+"Schlegel, Hans",male,1951,Germany,civilian,1,PSP,1993,240,STS-55
+"Schlegel, Hans",male,1951,Germany,civilian,2,MSP,2008,306,STS-122
+"Currie, Nancy J.",female,1958,U.S.,military,1,MSP,1993,240,STS-57
+"Currie, Nancy J.",female,1958,U.S.,military,2,MSP,1995,214,STS-70
+"Currie, Nancy J.",female,1958,U.S.,military,3,MSP,1998,283,STS-88
+"Currie, Nancy J.",female,1958,U.S.,military,4,MSP,2002,262,STS-109
+"Wisoff, Peter J. K.",male,1958,U.S.,civilian,1,MSP,1993,239,STS-57
+"Wisoff, Peter J. K.",male,1958,U.S.,civilian,2,MSP,1994,269,STS-68
+"Wisoff, Peter J. K.",male,1958,U.S.,civilian,3,MSP,1997,240,STS-81
+"Wisoff, Peter J. K.",male,1958,U.S.,civilian,4,MSP,2000,309,STS-92
+"Voss, Janice E.",female,1956,U.S.,civilian,1,MSP,1993,239.73,STS-57
+"Voss, Janice E.",female,1956,U.S.,civilian,2,MSP,1995,198.47,STS-63
+"Voss, Janice E.",female,1956,U.S.,civilian,3,MSP,1997,95.21,STS-83
+"Voss, Janice E.",female,1956,U.S.,civilian,4,MSP,1997,396.8,STS-94
+"Voss, Janice E.",female,1956,U.S.,civilian,5,MSP,2000,269.6,STS-99
+"Tsibliyev, Vasili",male,1954,U.S.S.R/Russia,military,1,commander,1993,4721,14
+"Tsibliyev, Vasili",male,1954,U.S.S.R/Russia,military,2,commander,1997,4438,23
+"Haigneré, Jean-Pierre",male,1948,France,military,1,MSP,1993,496,Soyuz TM-17 / Soyuz TM-16
+"Haigneré, Jean-Pierre",male,1948,France,military,2,flight engineer,1999,4532,27
+"Newman, James H.",male,1956,U.S.,civilian,1,MSP,1993,236,STS-51
+"Newman, James H.",male,1956,U.S.,civilian,2,MSP,1995,260,STS-69
+"Newman, James H.",male,1956,U.S.,civilian,3,MSP,1998,283,STS-88
+"Newman, James H.",male,1956,U.S.,civilian,4,MSP,2002,262,STS-109
+"Bursch, Daniel W.",male,1957,U.S.,military,1,MSP,1993,236,STS-51
+"Bursch, Daniel W.",male,1957,U.S.,military,2,MSP,1994,169,STS-68
+"Bursch, Daniel W.",male,1957,U.S.,military,3,MSP,1996,241,STS-77
+"Bursch, Daniel W.",male,1957,U.S.,military,4,flight engineer,2001,4802,4
+"Walz, Carl E.",male,1955,U.S.,military,1,MSP,1993,236.18,STS-51
+"Walz, Carl E.",male,1955,U.S.,military,2,MSP,1994,360,STS-65
+"Walz, Carl E.",male,1955,U.S.,military,3,MSP,1996,243,STS-79
+"Walz, Carl E.",male,1955,U.S.,military,4,MSP,2001,4704,4
+"Searfoss, Richard A.",male,1956,U.S.,military,1,pilot,1993,338,STS-58
+"Searfoss, Richard A.",male,1956,U.S.,military,2,pilot,1996,216,STS-76
+"Searfoss, Richard A.",male,1956,U.S.,military,3,commander,1998,384,STS-90
+"McArthur, William S., Jr.",male,1951,U.S.,military,1,MSP,1993,336,STS-58
+"McArthur, William S., Jr.",male,1951,U.S.,military,2,MSP,1995,196,STS-74
+"McArthur, William S., Jr.",male,1951,U.S.,military,3,MSP,2000,309,STS-92
+"McArthur, William S., Jr.",male,1951,U.S.,military,4,flight engineer,2006,4555,12
+"Wolf, David A.",male,1956,U.S.,civilian,1,MSP,1993,336,STS-58
+"Wolf, David A.",male,1956,U.S.,civilian,2,MSP,1997,3072,24
+"Wolf, David A.",male,1956,U.S.,civilian,3,MSP,2002,259,STS-112
+"Wolf, David A.",male,1956,U.S.,civilian,4,MSP,2009,376,STS-127
+"Fettman, Martin Joseph",male,1956,U.S.,civilian,1,PSP,1993,336.47,STS-58
+Yuri Vladimirovich Usachyov,male,1957,U.S.S.R/Russia,military,1,flight engineer,1994,4368.45,Mir EO-15
+Yuri Vladimirovich Usachyov,male,1957,U.S.S.R/Russia,military,2,flight engineer,1996,4651.12,Mir EO-21
+Yuri Vladimirovich Usachyov,male,1957,U.S.S.R/Russia,military,3,MSP,2000,236.17,STS 101
+Yuri Vladimirovich Usachyov,male,1957,U.S.S.R/Russia,military,4,commander,2001,4014.68,2
+"Sega, Ronald M.",male,1952,U.S.,civilian,1,MSP,1994,199,STS-60
+"Sega, Ronald M.",male,1952,U.S.,civilian,2,MSP,1996,221,STS-76
+"Jones, Thomas D.",male,1955,U.S.,civilian,1,MSP,1994,269,STS-59
+"Jones, Thomas D.",male,1955,U.S.,civilian,2,MSP,1994,269,STS-68
+"Jones, Thomas D.",male,1955,U.S.,civilian,3,MSP,1996,423,STS-80
+"Jones, Thomas D.",male,1955,U.S.,civilian,4,MSP,2001,309,STS-98
+"Malenchenko, Yuri",male,1961,U.S.S.R/Russia,military,1,commander,1994,3022,16
+"Malenchenko, Yuri",male,1961,U.S.S.R/Russia,military,2,Flight engineer,2000,283,STS­106
+"Malenchenko, Yuri",male,1961,U.S.S.R/Russia,military,3,commander,2003,4438,7
+"Malenchenko, Yuri",male,1961,U.S.S.R/Russia,military,4,commander,2007,4603,16
+"Malenchenko, Yuri",male,1961,U.S.S.R/Russia,military,5,commander,2012,3047,32
+"Malenchenko, Yuri",male,1961,U.S.S.R/Russia,military,6,commander,2015,1477,46
+"Musabayev, Talgat",male,1951,U.S.S.R/Russia,military,1,flight engineer,1994,3002,16
+"Musabayev, Talgat",male,1951,U.S.S.R/Russia,military,2,commander,1998,4980,25
+"Musabayev, Talgat",male,1951,U.S.S.R/Russia,military,3,commander,2001,190,Soyuz TM­32/31
+"Halsell, James D., Jr.",male,1956,U.S.,military,1,pilot,1994,353,STS-65
+"Halsell, James D., Jr.",male,1956,U.S.,military,2,pilot,1995,196,STS-74
+"Halsell, James D., Jr.",male,1956,U.S.,military,3,commander,1997,95,STS-83
+"Halsell, James D., Jr.",male,1956,U.S.,military,4,commander,1997,376,STS-94
+"Halsell, James D., Jr.",male,1956,U.S.,military,5,commander,2000,237,STS-101
+"Chiao, Leroy",male,1960,U.S.,civilian,1,MSP,1994,354,STS-65
+"Chiao, Leroy",male,1960,U.S.,civilian,2,MSP,1996,214,STS-72
+"Chiao, Leroy",male,1960,U.S.,civilian,3,MSP,2000,310,STS-92
+"Chiao, Leroy",male,1960,U.S.,civilian,4,commander,2004,4627,10
+"Thomas, Donald A.",male,1955,U.S.,civilian,1,MSP,1994,353,STS-65
+"Thomas, Donald A.",male,1955,U.S.,civilian,2,MSP,1995,214,STS-70
+"Thomas, Donald A.",male,1955,U.S.,civilian,3,MSP,1997,95,STS-83
+"Thomas, Donald A.",male,1955,U.S.,civilian,4,MSP,1997,376,STS-94
+"Mukai, Chiaki",female,1952,Japan,civilian,1,PSP,1994,354,STS-65
+"Mukai, Chiaki",female,1952,Japan,civilian,2,PSP,1998,214,STS-95
+"Linenger, Jerry M.",male,1955,U.S.,military,1,MSP,1994,262,STS-64
+"Linenger, Jerry M.",male,1955,U.S.,military,2,MSP,1997,3172,22
+"Wilcutt, Terrence W.",male,1949,U.S.,military,1,pilot,1994,269,STS-68
+"Wilcutt, Terrence W.",male,1949,U.S.,military,2,pilot,1996,243,STS-79
+"Wilcutt, Terrence W.",male,1949,U.S.,military,3,commander,1998,211,STS-89
+"Wilcutt, Terrence W.",male,1949,U.S.,military,4,commander,2000,283,STS-106
+"Smith, Steven L.",male,1958,U.S.,civilian,1,MSP,1994,264,STS-68
+"Smith, Steven L.",male,1958,U.S.,civilian,2,MSP,1997,240,STS-82
+"Smith, Steven L.",male,1958,U.S.,civilian,3,MSP,1999,192,STS-103
+"Smith, Steven L.",male,1958,U.S.,civilian,4,MSP,2002,264,STS-110
+"Kondakova, Yelena V.",female,1957,U.S.S.R/Russia,civilian,1,flight engineer,1994,4061,17
+"Kondakova, Yelena V.",female,1957,U.S.S.R/Russia,civilian,2,MSP,1997,221,23
+"Tanner, Joseph R.",male,1950,U.S.,civilian,1,MSP,1994,262,STS-66
+"Tanner, Joseph R.",male,1950,U.S.,civilian,2,MSP,1997,239,STS-82
+"Tanner, Joseph R.",male,1950,U.S.,civilian,3,MSP,2000,259,STS-97
+"Tanner, Joseph R.",male,1950,U.S.,civilian,4,MSP,2006,283,STS-115
+"Clervoy, Jean-François",male,1958,France,military,1,MSP,1994,263,STS-66
+"Clervoy, Jean-François",male,1958,France,military,2,MSP,1997,221.1,STS-84
+"Clervoy, Jean-François",male,1958,France,military,3,MSP,1999,191,STS-103
+"Parazynski, Scott E.",male,1961,U.S.,civilian,1,MSP,1994,262,STS-66
+"Parazynski, Scott E.",male,1961,U.S.,civilian,2,MSP,1997,259,STS-86
+"Parazynski, Scott E.",male,1961,U.S.,civilian,3,MSP,1998,213,STS-95
+"Parazynski, Scott E.",male,1961,U.S.,civilian,4,MSP,2001,283,STS-100
+"Parazynski, Scott E.",male,1961,U.S.,civilian,5,MSP,2007,362,STS-120
+"Collins, Eileen M.",female,1956,U.S.,military,1,pilot,1995,198.5,STS-63
+"Collins, Eileen M.",female,1956,U.S.,military,2,pilot,1997,120,STS-84
+"Collins, Eileen M.",female,1956,U.S.,military,3,commander,1999,119,STS-93
+"Collins, Eileen M.",female,1956,U.S.,military,4,commander,2005,333,STS-114
+"Gregory, William G.",male,1957,U.S.,military,1,pilot,1995,399,STS-67
+"Grunsfeld, John M.",male,1958,U.S.,civilian,1,MSP,1995,399,STS-67
+"Grunsfeld, John M.",male,1958,U.S.,civilian,2,MSP,1997,244,STS-81
+"Grunsfeld, John M.",male,1958,U.S.,civilian,3,MSP,1999,191,STS-103
+"Grunsfeld, John M.",male,1958,U.S.,civilian,4,MSP,2002,262,STS-109
+"Grunsfeld, John M.",male,1958,U.S.,civilian,5,MSP,2009,309,STS-125
+"Lawrence, Wendy B.",female,1959,U.S.,military,1,MSP,1995,399,STS-67
+"Lawrence, Wendy B.",female,1959,U.S.,military,2,MSP,1997,259,STS-86
+"Lawrence, Wendy B.",female,1959,U.S.,military,3,MSP,1998,235,STS-91
+"Lawrence, Wendy B.",female,1959,U.S.,military,4,MSP,2005,333,STS-114
+"Dezhurov, Vladimir N.",male,1962,U.S.S.R/Russia,military,1,commander,1995,2768,18
+"Dezhurov, Vladimir N.",male,1962,U.S.S.R/Russia,military,2,commander,2001,3092,3
+"Budarin, Nikolai",male,1953,U.S.S.R/Russia,civilian,1,flight engineer,1995,1811,19
+"Budarin, Nikolai",male,1953,U.S.S.R/Russia,civilian,2,flight engineer,1998,4980,25
+"Budarin, Nikolai",male,1953,U.S.S.R/Russia,civilian,3,flight engineer,2002,3865,6
+Kregel Kevin R.,male,1956,U.S.,civilian,1,pilot,1995,214,STS-70
+Kregel Kevin R.,male,1956,U.S.,civilian,2,pilot,1996,405,STS-78
+Kregel Kevin R.,male,1956,U.S.,civilian,3,commander,1997,376,STS-87
+Kregel Kevin R.,male,1956,U.S.,civilian,4,commander,2000,269,STS-99
+"Weber, Mary E.",female,1962,U.S.,civilian,1,MSP,1995,236,STS-70
+"Weber, Mary E.",female,1962,U.S.,civilian,2,MSP,2000,214,STS-101
+"Gidzenko, Yuri",male,1962,U.S.S.R/Russia,military,1,commander,1995,4297,20
+"Gidzenko, Yuri",male,1962,U.S.S.R/Russia,military,2,commander,2000,3383,1
+"Gidzenko, Yuri",male,1962,U.S.S.R/Russia,military,3,commander,2002,237,Soyuz  3
+"Reiter, Thomas",male,1958,Germany,military,1,flight engineer,1995,4297.6,20
+"Reiter, Thomas",male,1958,Germany,military,2,flight engineer,2006,4108,13
+"Gernhardt, Michael L.",male,1956,U.S.,civilian,1,MSP,1995,260.5,STS-69
+"Gernhardt, Michael L.",male,1956,U.S.,civilian,2,MSP,1997,95.2,STS-83
+"Gernhardt, Michael L.",male,1956,U.S.,civilian,3,MSP,1997,376.75,STS-94
+"Gernhardt, Michael L.",male,1956,U.S.,civilian,4,MSP,2001,306.6,STS-104
+"Rominger, Kent V.",male,1956,U.S.,military,1,pilot,1995,381,STS-73
+"Rominger, Kent V.",male,1956,U.S.,military,2,pilot,1996,423,STS-80
+"Rominger, Kent V.",male,1956,U.S.,military,3,pilot,1997,55,STS-85
+"Rominger, Kent V.",male,1956,U.S.,military,4,commander,1999,235,STS-96
+"Rominger, Kent V.",male,1956,U.S.,military,5,commander,2001,285,STS-100
+"Coleman, Catherine G.",female,1960,U.S.,military,1,MSP,1995,382,STS-73
+"Coleman, Catherine G.",female,1960,U.S.,military,2,MSP,1999,119,STS-93
+"Coleman, Catherine G.",female,1960,U.S.,military,3,flight engineer,2011,3823,26
+"Lopez-Alegria, Michael E.",male,1958,U.S.,military,1,MSP,1995,381,STS-73
+"Lopez-Alegria, Michael E.",male,1958,U.S.,military,2,MSP,2000,309,STS-92
+"Lopez-Alegria, Michael E.",male,1958,U.S.,military,3,MSP,2002,330,STS-113
+"Lopez-Alegria, Michael E.",male,1958,U.S.,military,4,flight engineer,2007,5168,14
+"Leslie, Fred Weldon",male,1951,U.S.,civilian,1,PSP,1995,382.02,STS-73
+"Sacco, Albert Jr.",male,1949,U.S.,civilian,1,PSP,1995,382.02,STS-73
+Chris Hadfield,male,1959,Canada,military,1,pilot,1995,196.5,STS-74
+Chris Hadfield,male,1959,Canada,military,2,pilot,2001,285.5,STS-100
+Chris Hadfield,male,1959,Canada,military,3,pilot,2012,3710.32,34
+"Jett, Brent W.",male,1958,U.S.,military,1,pilot,1996,214,STS-72
+"Jett, Brent W.",male,1958,U.S.,military,2,pilot,1997,244,STS-81
+"Jett, Brent W.",male,1958,U.S.,military,3,commander,2000,259,STS-97
+"Jett, Brent W.",male,1958,U.S.,military,4,commander,2006,283,STS-115
+"Scott, Winston E.",male,1950,U.S.,military,1,MSP,1996,214,STS-72
+"Scott, Winston E.",male,1950,U.S.,military,2,MSP,1997,376,STS-87
+"Wakata, Koichi",male,1963,Japan,civilian,1,MSP,1996,214,STS-72
+"Wakata, Koichi",male,1963,Japan,civilian,2,MSP,2000,309.75,STS-92
+"Wakata, Koichi",male,1963,Japan,civilian,3,flight engineer,2009,3303,18
+"Wakata, Koichi",male,1963,Japan,civilian,4,commander,2013,4509.75,38
+"Barry, Daniel T.",male,1953,U.S.,civilian,1,MSP,1996,214,STS-72
+"Barry, Daniel T.",male,1953,U.S.,civilian,2,MSP,1999,235,STS-96
+"Barry, Daniel T.",male,1953,U.S.,civilian,3,MSP,2001,285,STS-105
+"Onufrienko, Yuri",male,1961,U.S.S.R/Russia,military,1,commander,1996,4651,21
+"Onufrienko, Yuri",male,1961,U.S.S.R/Russia,military,2,commander,2001,4699,4
+"Horowitz, Scott J.",male,1957,U.S.,military,1,pilot,1996,378,STS-75
+"Horowitz, Scott J.",male,1957,U.S.,military,2,pilot,1997,277,STS-82
+"Horowitz, Scott J.",male,1957,U.S.,military,3,pilot,2000,237,STS-101
+"Horowitz, Scott J.",male,1957,U.S.,military,4,commander,2001,285,STS-105
+"Cheli, Maurizio",male,1959,Italy,military,1,MSP,1996,377.68,STS-75
+"Guidoni, Umberto",male,1954,Italy,civilian,1,MSP,1996,377.67,STS-75
+"Guidoni, Umberto",male,1954,Italy,civilian,2,MSP,2001,285.5,STS-100
+"Thomas, Andrew S. W.",male,1951,Australia,civilian,1,MSP,1983,240,STS-77
+"Thomas, Andrew S. W.",male,1951,Australia,civilian,2,MSP,1998,3384,24
+"Thomas, Andrew S. W.",male,1951,Australia,civilian,3,MSP,2001,307,STS-102
+"Thomas, Andrew S. W.",male,1951,Australia,civilian,4,MSP,2005,333,STS-114
+"Linnehan, Richard M.",male,1957,U.S.,civilian,1,MSP,1996,405,STS-78
+"Linnehan, Richard M.",male,1957,U.S.,civilian,2,MSP,1998,382,STS-90
+"Linnehan, Richard M.",male,1957,U.S.,civilian,3,MSP,2002,262,STS-109
+"Linnehan, Richard M.",male,1957,U.S.,civilian,4,MSP,2008,378,STS-123
+"Brady, Charles E., Jr.",male,1951,U.S.,military,1,MSP,1996,405,STS-78
+"Favier, Jean-Jacques",male,1949,France,civilian,1,PSP,1996,405.8,STS-78
+Robert Thirsk,male,1953,Canada,civilian,1,MSP,1996,405.8,STS-78
+Robert Thirsk,male,1953,Canada,civilian,2,flight engineer,2009,4512,20
+"Korzun, Valery",male,1953,U.S.S.R/Russia,military,1,commander,1996,4721,22
+"Korzun, Valery",male,1953,U.S.S.R/Russia,military,2,commander,2002,4438,5
+"André-Deshays, Claudie (Haigneré)",female,1957,France,civilian,1,MSP,1996,378.4,Soyuz TM-24/23
+"André-Deshays, Claudie (Haigneré)",female,1957,France,civilian,2,flight engineer,2001,236,Soyuz TM-33/32
+"Lazutkin, Aleksandr",male,1957,U.S.S.R/Russia,civilian,1,flight engineer,1997,4438,23
+"Ewald, Reinhold",male,1956,Germany,civilian,1,MSP,1997,472.57,Soyuz TM-25/24
+"Kilrain-Still, Susan L.",female,1961,U.S.,military,1,pilot,1997,95,STS-83
+"Kilrain-Still, Susan L.",female,1961,U.S.,military,2,pilot,1997,376,STS-94
+"Crouch, Roger Keith",male,1940,U.S.,civilian,1,PSP,1997,95.54,STS-83
+"Crouch, Roger Keith",male,1940,U.S.,civilian,2,PSP,1997,377.01,STS-94
+"Linteris, Gregory Thomas",male,1957,U.S.,civilian,1,PSP,1997,95.54,STS-83
+"Linteris, Gregory Thomas",male,1957,U.S.,civilian,2,PSP,1997,377.01,STS-94
+"Noriega, Carlos I.",male,1959,U.S.,military,1,MSP,1997,221,STS-84
+"Noriega, Carlos I.",male,1959,U.S.,military,2,MSP,2000,260,STS-97
+"Lu, Edward T.",male,1963,U.S.,civilian,1,MSP,1997,221,STS-84
+"Lu, Edward T.",male,1963,U.S.,civilian,2,MSP,2000,283,STS-106
+"Lu, Edward T.",male,1963,U.S.,civilian,3,flight engineer,2003,4439,7
+"Vinogradov, Pavel",male,1953,U.S.S.R/Russia,civilian,1,flight engineer,1997,4745,24
+"Vinogradov, Pavel",male,1953,U.S.S.R/Russia,civilian,2,commander,2006,4390,13
+"Vinogradov, Pavel",male,1953,U.S.S.R/Russia,civilian,3,commander,2013,3990,35
+"Curbeam, Robert L., Jr.",male,1962,U.S.,military,1,MSP,1997,284,STS-85
+"Curbeam, Robert L., Jr.",male,1962,U.S.,military,2,MSP,2001,309,STS-98
+"Curbeam, Robert L., Jr.",male,1962,U.S.,military,3,MSP,2006,309,STS-116
+"Robinson, Stephen K.",male,1955,U.S.,civilian,1,MSP,1997,284,STS-85
+"Robinson, Stephen K.",male,1955,U.S.,civilian,2,MSP,1998,213,STS-95
+"Robinson, Stephen K.",male,1955,U.S.,civilian,3,MSP,2005,333,STS-114
+"Robinson, Stephen K.",male,1955,U.S.,civilian,4,MSP,2010,330,STS-130
+Bjarni Tryggvason,male,1945,Canada,civilian,1,PSP,1997,284,STS-85
+"Bloomfield, Michael J.",male,1959,U.S.,military,1,pilot,1997,259,STS-86
+"Bloomfield, Michael J.",male,1959,U.S.,military,2,pilot,2000,260,STS-97
+"Bloomfield, Michael J.",male,1959,U.S.,military,3,commander,2002,260,STS-110
+"Lindsey, Steven W.",male,1960,U.S.,military,1,pilot,1997,376,STS-87
+"Lindsey, Steven W.",male,1960,U.S.,military,2,pilot,1998,213,STS-95
+"Lindsey, Steven W.",male,1960,U.S.,military,3,commander,2002,306,STS-104
+"Lindsey, Steven W.",male,1960,U.S.,military,4,commander,2006,306,STS-121
+"Lindsey, Steven W.",male,1960,U.S.,military,5,commander,2011,307,STS-133
+"Chawla, Kalpana",female,1962,U.S.,civilian,1,MSP,1997,376,STS-87
+"Chawla, Kalpana",female,1962,U.S.,civilian,2,MSP,2003,382,STS-107
+"Doi, Takao",male,1954,Japan,civilian,1,MSP,1997,376.5,STS-87
+"Doi, Takao",male,1954,Japan,civilian,2,MSP,2008,378.3,STS-123
+"Kadenyuk, Leonid",male,1951,U.S.S.R/Ukraine,civilian,1,pilot,1997,376,STS87
+"Edwards, Joe F., Jr.",male,1958,U.S.,military,1,pilot,1998,211,STS-89
+"Reilly, James F.",male,1954,U.S.,civilian,1,MSP,1998,211,STS-89
+"Reilly, James F.",male,1954,U.S.,civilian,2,MSP,2001,306,STS-104
+"Reilly, James F.",male,1954,U.S.,civilian,3,MSP,2007,336,STS-117
+"Anderson, Michael P.",male,1959,U.S.,military,1,MSP,1998,211,STS-89
+"Anderson, Michael P.",male,1959,U.S.,military,2,MSP,2003,382,STS-107
+"Sharipov, Salizhan",male,1964,U.S.S.R/Russia,military,1,Flight engineer,1998,211,24
+"Sharipov, Salizhan",male,1964,U.S.S.R/Russia,military,2,commander,2004,4627,10
+"Eyharts, Léopold",male,1957,France,military,1,MSP,1998,496.5,Soyuz TM-27/26
+"Eyharts, Léopold",male,1957,France,military,2,flight engineer,2008,1157,16
+"Altman, Scott D.",male,1959,U.S.,military,1,pilot,1998,382,STS-90
+"Altman, Scott D.",male,1959,U.S.,military,2,pilot,2000,283,STS-106
+"Altman, Scott D.",male,1959,U.S.,military,3,commander,2002,262,STS-109
+"Altman, Scott D.",male,1959,U.S.,military,4,commander,2009,309,STS-125
+"Hire, Kathryn P.",female,1959,U.S.,military,1,MSP,1998,381,STS-90
+"Hire, Kathryn P.",female,1959,U.S.,military,2,MSP,2010,330,STS-130
+"Williams, Dafydd Rhys",male,1954,Canada,civilian,1,MSP,1998,381.85,STS-90
+"Williams, Dafydd Rhys",male,1954,Canada,civilian,2,MSP,2007,305,STS-118
+"Buckey, Jay Clark Jr.",male,1956,U.S.,civilian,1,PSP,1998,382.31,STS-90
+"Pawelczyk, James Anthony",male,1960,U.S.,civilian,1,PSP,1998,382.31,STS-90
+"Gorie, Dominic L.",male,1957,U.S.,military,1,pilot,1998,235,STS-91
+"Gorie, Dominic L.",male,1957,U.S.,military,2,pilot,2000,269,STS-99
+"Gorie, Dominic L.",male,1957,U.S.,military,3,commander,2001,283,STS-108
+"Gorie, Dominic L.",male,1957,U.S.,military,4,commander,2008,378,STS-123
+"Kavandi, Janet L.",female,1957,U.S.,civilian,1,MSP,1998,235,STS-91
+"Kavandi, Janet L.",female,1957,U.S.,civilian,2,MSP,2000,269,STS-99
+"Kavandi, Janet L.",female,1957,U.S.,civilian,3,MSP,2001,306,STS-104
+"Padalka, Gennady",male,1958,U.S.S.R/Russia,military,1,commander,1998,4768,26
+"Padalka, Gennady",male,1958,U.S.S.R/Russia,military,2,commander,2004,4509,9
+"Padalka, Gennady",male,1958,U.S.S.R/Russia,military,3,commander,2009,4768,19
+"Padalka, Gennady",male,1958,U.S.S.R/Russia,military,4,commander,2012,2999,31
+"Padalka, Gennady",male,1958,U.S.S.R/Russia,military,5,commander,2015,4037,43
+"Baturin, Yuri",male,1949,U.S.S.R/Russia,civilian,1,MSP,1998,283,26
+"Duque, Pedro",male,1963,Spain,civilian,1,flight engineer,1998,213.73,STS-95
+"Baturin, Yuri",male,1949,U.S.S.R/Russia,civilian,2,MSP,2001,190,Soyuz TM­32/31
+"Duque, Pedro",male,1963,Spain,civilian,2,flight engineer,2003,237.03,Soyuz TMA-3/2
+"Sturckow, Frederick W.",male,1961,U.S.,military,1,pilot,1998,283,STS-88
+"Sturckow, Frederick W.",male,1961,U.S.,military,2,pilot,2001,285,STS-105
+"Sturckow, Frederick W.",male,1961,U.S.,military,3,commander,2007,336,STS-117
+"Sturckow, Frederick W.",male,1961,U.S.,military,4,commander,2009,333,STS-128
+"Bella, Ivan",male,1964,Slovakia,military,1,MSP,1999,190,27
+"Husband, Rick D.",male,1957,U.S.,military,1,pilot,1999,235,STS-96
+"Husband, Rick D.",male,1957,U.S.,military,2,commander,2003,382,STS-107
+"Payette, Julie",female,1963,Canada,civilian,1,MSP,1999,235.23,STS-96
+"Payette, Julie",female,1963,Canada,civilian,2,MSP,2009,376.75,STS-127
+"Tokarev, Valeri",male,1952,U.S.S.R/Russia,military,1,Flight engineer,1999,235,STS­96
+"Tokarev, Valeri",male,1952,U.S.S.R/Russia,military,2,MSP,2005,4555,12
+"Ashby, Jeffrey S.",male,1954,U.S.,military,1,pilot,1999,119,STS-93
+"Ashby, Jeffrey S.",male,1954,U.S.,military,2,pilot,2001,285.5,STS-100
+"Ashby, Jeffrey S.",male,1954,U.S.,military,3,commander,2002,260,STS-112
+"Kelly, Scott J.",male,1964,U.S.,military,1,pilot,1999,191,STS-103
+"Kelly, Scott J.",male,1964,U.S.,military,2,commander,2007,305,STS-118
+"Kelly, Scott J.",male,1964,U.S.,military,3,flight engineer,2011,3825,25
+"Kelly, Scott J.",male,1964,U.S.,military,4,flight engineer,2015,8163,43
+"Thiele, Gerhard",male,1953,Germany,civilian,1,MSP,2000,269.65,STS-99
+"Zalyotin, Sergei",male,1962,U.S.S.R/Russia,military,1,commander,2000,1747,28
+"Zalyotin, Sergei",male,1962,U.S.S.R/Russia,military,2,commander,2002,260,Soyuz TMA­1/TM­34
+"Williams, Jeffrey N.",male,1958,U.S.,military,1,MSP,2000,240,STS-101
+"Williams, Jeffrey N.",male,1958,U.S.,military,2,flight engineer,2006,4320,13
+"Williams, Jeffrey N.",male,1958,U.S.,military,3,flight engineer,2010,4060,21
+"Williams, Jeffrey N.",male,1958,U.S.,military,4,flight engineer,2016,4132,47
+"Mastracchio, Richard A.",male,1960,U.S.,civilian,1,MSP,2000,283,STS-106
+"Mastracchio, Richard A.",male,1960,U.S.,civilian,2,MSP,2007,306,STS-118
+"Mastracchio, Richard A.",male,1960,U.S.,civilian,3,MSP,2010,362,STS-131
+"Mastracchio, Richard A.",male,1960,U.S.,civilian,4,flight engineer,2014,4509,38
+"Burbank, Daniel C.",male,1961,U.S.,military,1,MSP,2000,283,STS-106
+"Burbank, Daniel C.",male,1961,U.S.,military,2,MSP,2006,283,STS-115
+"Burbank, Daniel C.",male,1961,U.S.,military,3,commander,2011,3968,29
+"Morukov, Boris",male,1950,U.S.S.R/Russia,civilian,1,Flight engineer,2000,283,STS­106
+"Melroy, Pamela A.",female,1961,U.S.,military,1,pilot,2000,309,STS-92
+"Melroy, Pamela A.",female,1961,U.S.,military,2,pilot,2002,259,STS-112
+"Melroy, Pamela A.",female,1961,U.S.,military,3,commander,2007,362,STS-120
+"Polansky, Mark L.",male,1956,U.S.,civilian,1,pilot,2001,309,STS-98
+"Polansky, Mark L.",male,1956,U.S.,civilian,2,commander,2006,308,STS-116
+"Polansky, Mark L.",male,1956,U.S.,civilian,3,commander,2009,377,STS-127
+"Kelly, James M.",male,1959,U.S.,military,1,pilot,2001,307,STS-102
+"Kelly, James M.",male,1959,U.S.,military,2,pilot,2005,333,STS-114
+"Richards, Paul W.",male,1964,U.S.,civilian,1,MSP,2001,307,STS-102
+"Phillips, John L.",male,1951,U.S.,civilian,1,MSP,2001,285,STS-100
+"Phillips, John L.",male,1951,U.S.,civilian,2,flight engineer,2005,4296,11
+"Phillips, John L.",male,1951,U.S.,civilian,3,MSP,2009,307.5,STS-119
+"Lonchakov, Yuri",male,1965,U.S.S.R/Russia,military,1,MSP,2001,285,STS­100
+"Lonchakov, Yuri",male,1965,U.S.S.R/Russia,military,2,flight engineer,2002,260,Soyuz TMA­1/TM­34
+"Lonchakov, Yuri",male,1965,U.S.S.R/Russia,military,3,commander,2008,4272,18
+"Tito, Dennis Anthony",male,1940,U.S.,civilian,1,Other (space tourist),2001,190.13,ЭП-1
+"Hobaugh, Charles O.",male,1961,U.S.,military,1,pilot,2001,306,STS-104
+"Hobaugh, Charles O.",male,1961,U.S.,military,2,pilot,2007,305,STS-118
+"Hobaugh, Charles O.",male,1961,U.S.,military,3,commander,2009,259,STS-129
+"Forrester, Patrick G.",male,1957,U.S.,military,1,MSP,2001,285,STS-105
+"Forrester, Patrick G.",male,1957,U.S.,military,2,MSP,2007,332,STS-117
+"Forrester, Patrick G.",male,1957,U.S.,military,3,MSP,2009,333,STS-128
+"Tyurin, Mikhail",male,1960,U.S.S.R/Russia,military,1,flight engineer,2001,3092,3
+"Tyurin, Mikhail",male,1960,U.S.S.R/Russia,military,2,flight engineer,2006,5168,14
+"Tyurin, Mikhail",male,1960,U.S.S.R/Russia,military,3,commander,2013,4509,38
+"Kozeyev, Konstantin",male,1967,U.S.S.R/Russia,civilian,1,flight engineer,2001,235,Soyuz TM­33/32
+"Kelly, Mark E.",male,1964,U.S.,military,1,pilot,2001,283,STS-108
+"Kelly, Mark E.",male,1964,U.S.,military,2,pilot,2006,307,STS-121
+"Kelly, Mark E.",male,1964,U.S.,military,3,commander,2008,330,STS-124
+"Kelly, Mark E.",male,1964,U.S.,military,4,commander,2011,377,STS-134
+"Tani, Daniel M.",male,1961,U.S.,civilian,1,MSP,2001,283,STS-108
+"Tani, Daniel M.",male,1961,U.S.,civilian,2,MSP,2007,2880,16
+"Carey, Duane G.",male,1957,U.S.,military,1,pilot,2002,262,STS-109
+"Massimino, Michael J.",male,1962,U.S.,civilian,1,MSP,2002,262,STS-109
+"Massimino, Michael J.",male,1962,U.S.,civilian,2,MSP,2009,309,STS-125
+"Frick, Stephen N.",male,1964,U.S.,military,1,pilot,2002,260,STS-110
+"Frick, Stephen N.",male,1964,U.S.,military,2,commander,2008,306,STS-122
+"Walheim, Rex J.",male,1962,U.S.,military,1,MSP,2002,259,STS-110
+"Walheim, Rex J.",male,1962,U.S.,military,2,MSP,2008,306,STS-122
+"Walheim, Rex J.",male,1962,U.S.,military,3,MSP,2011,306.5,STS-135
+"Morin, Lee M.",male,1952,U.S.,military,1,MSP,2002,259,STS-110
+"Vittori, Roverto",male,1964,Italy,military,1,flight engineer,2002,237,Soyuz TMA-34/TM-33
+"Vittori, Roverto",male,1964,Italy,military,2,flight engineer,2005,237,Soyuz TMA-6/TMA-5
+"Vittori, Roverto",male,1964,Italy,military,3,MSP,2011,377.65,STS-134
+"Shuttleworth, M. Richard",male,1973,Republic of South Africa,civilian,1,Other (Space tourist),2002,237,Soyuz TM-34 / Soyuz TM-33
+"Lockhart, Paul S.",male,1956,U.S.,military,1,pilot,2002,332,STS-111
+"Lockhart, Paul S.",male,1956,U.S.,military,2,pilot,2002,330,STS-113
+"Perrin, Philippe",male,1963,France,military,1,MSP,2002,332.58,STS-111
+"Whitson, Peggy A.",female,1960,U.S.,civilian,1,MSP,2002,4438,5
+"Whitson, Peggy A.",female,1960,U.S.,civilian,2,flight engineer,2008,4603,16
+"Whitson, Peggy A.",female,1960,U.S.,civilian,3,flight engineer,2016,6941,50
+"Treshchov, Sergei",male,1958,U.S.S.R/Russia,civilian,1,flight engineer,2002,4438,5
+"Magnus, Sandra H.",female,1964,U.S.,civilian,1,MSP,2002,260,STS-112
+"Magnus, Sandra H.",female,1964,U.S.,civilian,2,MSP,2008,3210,18
+"Magnus, Sandra H.",female,1964,U.S.,civilian,3,MSP,2011,306,STS-135
+"Sellers, Piers J.",male,1955,U.K./U.S.,civilian,1,MSP,2002,259,STS-112
+"Sellers, Piers J.",male,1955,U.K./U.S.,civilian,2,MSP,2006,306,STS-121
+"Sellers, Piers J.",male,1955,U.K./U.S.,civilian,3,MSP,2010,282.5,STS-132
+"Yurchikhin, Fyodor",male,1959,U.S.S.R/Russia,civilian,1,MSP,2002,259,STS­112
+"Yurchikhin, Fyodor",male,1959,U.S.S.R/Russia,civilian,2,flight engineer,2007,4721,15
+"Yurchikhin, Fyodor",male,1959,U.S.S.R/Russia,civilian,3,commander,2010,3919,24
+"Yurchikhin, Fyodor",male,1959,U.S.S.R/Russia,civilian,4,commander,2013,3990,36
+"Yurchikhin, Fyodor",male,1959,U.S.S.R/Russia,civilian,5,commander,2017,3258,51
+"De Winne, Frank",male,1961,Belgium,military,1,commander,2002,261,Soyuz TMA-1/TM-34
+"De Winne, Frank",male,1961,Belgium,military,2,commander,2009,4508.6,20
+"Herrington, John B.",male,1958,U.S.,military,1,MSP,2002,330,STS-113
+"Pettit, Donald R.",male,1955,U.S.,civilian,1,flight engineer,2002,3865,6
+"Pettit, Donald R.",male,1955,U.S.,civilian,2,MSP,2008,380.5,STS-126
+"Pettit, Donald R.",male,1955,U.S.,civilian,3,flight engineer,2011,4627,30
+"McCool, William C.",male,1961,U.S.,military,1,pilot,2003,382,STS-107
+"Brown, David M.",male,1956,U.S.,military,1,MSP,2003,382,STS-107
+"Clark, Laurel B.",female,1961,U.S.,military,1,MSP,2003,382,STS-107
+"Ramon, Ilan",male,1954,Israel,military,1,PSP,2003,382.33,STS-107
+"Yang, Liwei",male,1965,China,military,1,commander,2005,21,Shenzhou 5
+"Fincke, E. Michael",male,1967,U.S.,military,1,flight engineer,2004,4501,9
+"Fincke, E. Michael",male,1967,U.S.,military,2,commander,2009,4280,18
+"Fincke, E. Michael",male,1967,U.S.,military,3,MSP,2011,378,STS-134
+"Kuipers, Andre",male,1958,Netherland,civilian,1,flight engineer,2004,261,Soyuz TMA-4/TMA-3
+"Kuipers, Andre",male,1958,Netherland,civilian,2,flight engineer,2012,4627,30
+"Shargin, Yuri",male,1960,U.S.S.R/Russia,military,1,flight engineer,2004,237,Soyuz TMA­5
+"Noguchi, Soichi",male,1965,Japan,civilian,1,MSP,2005,333.55,STS-114
+"Noguchi, Soichi",male,1965,Japan,civilian,2,flight engineer,2009,3917.55,22
+"Camarda, Charles J.",male,1952,U.S.,civilian,1,MSP,2005,333,STS-114
+"Olsen, Gregory Hammond",male,1945,U.S.,civilian,1,Space tourist,2005,237.29,Soyuz TMA-7
+"Fei, Junlong",male,1966,China,military,1,commander,2005,115,Shenzhou 6
+Nie Haisheng,male,1964,China,military,1,flight engineer,2005,466,Shenzhou 6
+Nie Haisheng,male,1964,China,military,2,commander,2008,466,Shenzhou 10
+"Pontes, Marcos Cesar",male,1963,Brazil,military,1,pilot,2006,237.28,Soyuz TMA-8
+"Fossum, Michael E.",male,1957,U.S.,civilian,1,MSP,2006,307,STS-121
+"Fossum, Michael E.",male,1957,U.S.,civilian,2,MSP,2008,330,STS-124
+"Fossum, Michael E.",male,1957,U.S.,civilian,3,commander,2011,4014,28
+"Nowak, Lisa M.",female,1963,U.S.,military,1,MSP,2006,306,STS-121
+"Wilson, Stephanie D.",female,1966,U.S.,civilian,1,MSP,2006,306,STS-121
+"Wilson, Stephanie D.",female,1966,U.S.,civilian,2,MSP,2007,362,STS-120
+"Wilson, Stephanie D.",female,1966,U.S.,civilian,3,MSP,2010,362,STS-131
+"Ferguson, Christopher J.",male,1961,U.S.,military,1,pilot,2006,283,STS-115
+"Ferguson, Christopher J.",male,1961,U.S.,military,2,commander,2008,380.5,STS-126
+"Ferguson, Christopher J.",male,1961,U.S.,military,3,commander,2011,306.5,STS-135
+"Stefanyshyn-Piper, Heidemarie M.",female,1963,U.S.,military,1,MSP,2002,288,STS-115
+"Stefanyshyn-Piper, Heidemarie M.",female,1963,U.S.,military,2,MSP,2008,360,STS-126
+"Ansari, Anousheh",female,1966,U.S.,civilian,1,Other (space tourist),2006,261.525,Soyuz TMA-9
+"Oefelein, William A.",male,1965,U.S.,military,1,pilot,2006,308,STS-116
+"Patrick, Nicholas J. M.",male,1964,U.K./U.S.,civilian,1,MSP,2006,308,STS-116
+"Patrick, Nicholas J. M.",male,1964,U.K./U.S.,civilian,2,MSP,2010,330,STS-130
+Christer Fuglesang,male,1957,Sweden,civilian,1,MSP,2006,308.73,STS-116
+Christer Fuglesang,male,1957,Sweden,civilian,2,MSP,2009,332.9,STS-128
+"Higginbotham, Joan E.",female,1964,U.S.,civilian,1,MSP,2006,308,STS-116
+"Williams, Sunita L.",female,1965,U.S.,military,1,MSP,2006,4674,14
+"Williams, Sunita L.",female,1965,U.S.,military,2,flight engineer,2012,3048,32
+"Kotov, Oleg",male,1965,U.S.S.R/Russia,military,1,commander,2007,4721,15
+"Kotov, Oleg",male,1965,U.S.S.R/Russia,military,2,commander,2009,3917,22
+"Kotov, Oleg",male,1965,U.S.S.R/Russia,military,3,commander,2013,3990,37
+"Simonyi, Charles (Karoly)",male,1948,U.S.,civilian,1,Other (space tourist),2007,331.4,Soyuz TMA-10
+"Simonyi, Charles (Karoly)",male,1948,U.S.,civilian,2,Other (space tourist),2009,307.85,Soyuz TMA-14
+"Archambault, Lee J.",male,1960,U.S.,military,1,pilot,2007,332,STS-117
+"Archambault, Lee J.",male,1960,U.S.,military,2,commander,2009,307.5,STS-119
+"Swanson, Steven R.",male,1960,U.S.,civilian,1,MSP,2007,332.22,STS-117
+"Swanson, Steven R.",male,1960,U.S.,civilian,2,MSP,2009,307.5,STS-119
+"Swanson, Steven R.",male,1960,U.S.,civilian,3,flight engineer,2014,4007.13,39
+"Olivas, John D.",male,1965,U.S.,civilian,1,MSP,2007,332,STS-117
+"Olivas, John D.",male,1965,U.S.,civilian,2,MSP,2009,333,STS-128
+"Anderson, Clayton C.",male,1959,U.S.,civilian,1,flight engineer,2007,3642,15
+"Anderson, Clayton C.",male,1959,U.S.,civilian,2,MSP,2010,363,STS-131
+"Caldwell, Tracy E.",female,1969,U.S.,civilian,1,MSP,2007,306,STS-118
+"Caldwell, Tracy E.",female,1969,U.S.,civilian,2,flight engineer,2010,4220,23
+"Drew, Alvin Benjamin",male,1962,U.S.,military,1,MSP,2007,306,STS-118
+"Drew, Alvin Benjamin",male,1962,U.S.,military,2,MSP,2011,307,STS-133
+"Morgan, Barbara R.",female,1951,U.S.,civilian,1,MSP,2007,305,STS-118
+"Shukor, Sheikh Muszaphar",male,1972,Malysia,civilian,1,Other (space tourist),2007,261.23,Soyuz TMA-11/10
+"Zamka, George D.",male,1962,U.S.,military,1,pilot,2007,362,STS-120
+"Zamka, George D.",male,1962,U.S.,military,2,commander,2010,306.1,STS-130
+"Wheelock, Douglas H.",male,1960,U.S.,military,1,MSP,2007,360,STS-120
+"Wheelock, Douglas H.",male,1960,U.S.,military,2,flight engineer,2010,3912,24
+"Nespoli, Paolo A.",male,1957,Italy,military,1,MSP,2007,362.4,STS-120
+"Nespoli, Paolo A.",male,1957,Italy,military,2,flight engineer,2010,3823.28,26
+"Nespoli, Paolo A.",male,1957,Italy,military,3,flight engineer,2017,3328.93,52
+"Poindexter, Alan G.",male,1961,U.S.,military,1,pilot,2008,306,STS-122
+"Poindexter, Alan G.",male,1961,U.S.,military,2,commander,2010,363,STS-131
+"Melvin, Leland D.",male,1964,U.S.,civilian,1,MSP,2008,306,STS-122
+"Melvin, Leland D.",male,1964,U.S.,civilian,2,MSP,2009,259,STS-129
+"Love, Stanley G.",male,1965,U.S.,civilian,1,MSP,2008,306,STS-122
+"Johnson, Gregory H.",male,1962,U.S.,military,1,pilot,2008,378,STS-123
+"Johnson, Gregory H.",male,1962,U.S.,military,2,pilot,2011,377,STS-134
+"Behnken, Robert L.",male,1970,U.S.,military,1,MSP,2008,378,STS-123
+"Behnken, Robert L.",male,1970,U.S.,military,2,MSP,2010,330,STS-130
+"Foreman, Michael J.",male,1957,U.S.,military,1,MSP,2008,378,STS-123
+"Foreman, Michael J.",male,1957,U.S.,military,2,MSP,2009,259,STS-129
+"Reisman, Garrett E.",male,1968,U.S.,civilian,1,flight engineer,2008,2289,16
+"Reisman, Garrett E.",male,1968,U.S.,civilian,2,MSP,2010,282,STS-132
+"Volkov, Sergei",male,1973,U.S.S.R/Russia,military,1,commander,2008,4768,17
+"Volkov, Sergei",male,1973,U.S.S.R/Russia,military,2,commander,2011,4014,28
+"Volkov, Sergei",male,1973,U.S.S.R/Russia,military,3,commander,2015,4003,45
+"Kononenko, Oleg D.",male,1964,U.S.S.R/Russia,military,1,flight engineer,2008,3168,17
+"Kononenko, Oleg D.",male,1964,U.S.S.R/Russia,military,2,commander,2011,4626,30
+"Kononenko, Oleg D.",male,1964,U.S.S.R/Russia,military,3,commander,2015,3400,44
+"Kononenko, Oleg D.",male,1964,U.S.S.R/Russia,military,4,commander,2018,4887,57
+"Yi, Soyeon (Lee So-hyun)",female,1978,Korea,civilian,1,Other (Space tourist),2008,261,Soyuz TMA-12 / Soyuz TMA-11
+"Ham, Kenneth T.",male,1964,U.S.,military,1,pilot,2008,330,STS-124
+"Ham, Kenneth T.",male,1964,U.S.,military,2,commander,2010,282,STS-132
+"Nyberg, Karen L.",female,1969,U.S.,civilian,1,MSP,2008,330,STS-124
+"Nyberg, Karen L.",female,1969,U.S.,civilian,2,flight engineer,2013,3990,36
+"Garan, Ronald J., Jr.",male,1961,U.S.,military,1,MSP,2008,330,STS-124
+"Garan, Ronald J., Jr.",male,1961,U.S.,military,2,MSP,2008,3942,27
+"Hoshide, Akihiko",male,1968,Japan,civilian,1,MSP,2008,306.25,STS-124
+"Hoshide, Akihiko",male,1968,Japan,civilian,2,flight engineer,2012,3047.25,32
+"Chamitoff, Gregory",male,1962,U.S.,civilian,1,flight engineer,2008,4392.5,17
+"Chamitoff, Gregory",male,1962,U.S.,civilian,2,MSP,2011,377.5,STS-134
+"Zhai, Zhigang",male,1966,China,military,1,commander,2008,68,Shenzhou 7
+"Liu, Boming",male,1966,China,military,1,flight engineer,2008,68,Shenzhou 7
+"Jing, Haipeng",male,1966,China,military,1,flight engineer,2008,1146,Shenzhou 7
+"Jing, Haipeng",male,1966,China,military,2,commander,2012,1146,Shenzhou 9
+"Jing, Haipeng",male,1966,China,military,3,commander,2016,1146,Shenzhou 11
+"Garriott, Richard Allen",male,1961,U.K./U.S.,civilian,1,Space tourist,2008,284.89,Soyuz TMA-13
+"Boe, Eric A.",male,1964,U.S.,military,1,pilot,2008,380,STS-126
+"Boe, Eric A.",male,1964,U.S.,military,2,pilot,2011,307,STS-133
+"Bowen, Stephen G.",male,1964,U.S.,military,1,MSP,2008,380,STS-126
+"Bowen, Stephen G.",male,1964,U.S.,military,2,MSP,2010,283,STS-132
+"Bowen, Stephen G.",male,1964,U.S.,military,3,MSP,2011,307,STS-133
+"Kimbrough, Robert S.",male,1967,U.S.,military,1,MSP,2008,380,STS-126
+"Kimbrough, Robert S.",male,1967,U.S.,military,2,flight engineer,2016,10383.25,49
+"Antonelli, Dominic A.",male,1967,U.S.,military,1,pilot,2009,287.5,STS-119
+"Antonelli, Dominic A.",male,1967,U.S.,military,2,pilot,2010,281.5,STS-132
+"Acaba, Joseph M.",male,1967,U.S.,civilian,1,MSP,2009,307,STS-119
+"Acaba, Joseph M.",male,1967,U.S.,civilian,2,flight engineer,2012,2928,31
+"Acaba, Joseph M.",male,1967,U.S.,civilian,3,flight engineer,2017,4037.23,53
+"Arnold, Richard R., II",male,1963,U.S.,civilian,1,MSP,2009,307,STS-119
+"Arnold, Richard R., II",male,1963,U.S.,civilian,2,flight engineer,2018,4722,55
+"Barratt, Michael R.",male,1959,U.S.,civilian,1,flight engineer,2009,4778,19
+"Barratt, Michael R.",male,1959,U.S.,civilian,2,MSP,2011,307,STS-133
+"Johnson, Gregory C.",male,1954,U.S.,civilian,1,pilot,2009,309.63,STS-125
+"Good, Michael T.",male,1962,U.S.,military,1,MSP,2009,309,STS-125
+"Good, Michael T.",male,1962,U.S.,military,2,MSP,2010,282.15,STS-132
+"McArthur, K. Megan",female,1971,U.S.,civilian,1,MSP,2009,309,STS-125
+"Feustel, Andrew J.",male,1965,U.S.,civilian,1,MSP,2009,309,STS-125
+"Feustel, Andrew J.",male,1965,U.S.,civilian,2,MSP,2011,378,STS-134
+"Feustel, Andrew J.",male,1965,U.S.,civilian,3,flight engineer,2018,4722,55
+"Romanenko, Roman",male,1971,U.S.S.R/Russia,military,1,flight engineer,2009,4508,20
+"Romanenko, Roman",male,1971,U.S.S.R/Russia,military,2,flight engineer,2012,3494,34
+"Hurley, Douglas G.",male,1966,U.S.,military,1,pilot,2009,377,STS-127
+"Hurley, Douglas G.",male,1966,U.S.,military,2,pilot,2011,306,STS-135
+"Cassidy, Christopher J.",male,1970,U.S.,military,1,MSP,2009,377,STS-127
+"Cassidy, Christopher J.",male,1970,U.S.,military,2,flight engineer,2013,3990,35
+"Marshburn, Thomas H.",male,1960,U.S.,military,1,MSP,2009,376,STS-127
+"Marshburn, Thomas H.",male,1960,U.S.,military,2,flight engineer,2013,3494,34
+"Kopra, Timothy L.",male,1963,U.S.,military,1,MSP,2009,1317,20
+"Kopra, Timothy L.",male,1963,U.S.,military,2,flight engineer,2015,1920,46
+"Ford, Kevin A.",male,1960,U.S.,military,1,pilot,2009,333,STS-128
+"Ford, Kevin A.",male,1960,U.S.,military,2,commander,2012,3448,33
+"Hernandez, Jose M.",male,1962,U.S.,civilian,1,MSP,2009,332,STS-128
+"Stott, Nicole P.",female,1962,U.S.,civilian,1,flight engineer,2009,1440,20
+"Stott, Nicole P.",female,1962,U.S.,civilian,2,MSP,2011,307,STS-133
+"Surayev, Maksim",male,1972,U.S.S.R/Russia,military,1,commander,2014,3968,40
+"Surayev, Maksim",male,1972,U.S.S.R/Russia,military,2,commander,2009,4060,21
+Guy Laliberte,male,1959,Canada,civilian,1,Other (Space tourist),2009,261.28,Soyuz TMA-16/14
+"Wilmore, Barry E.",male,1962,U.S.,military,1,pilot,2009,259,STS-129
+"Wilmore, Barry E.",male,1962,U.S.,military,2,flight engineer,2014,4013,41
+"Bresnik, Randolph J.",male,1967,U.S.,military,1,MSP,2009,259,STS-129
+"Bresnik, Randolph J.",male,1967,U.S.,military,2,flight engineer,2017,3328.93,52
+"Satcher, Robert L.",male,1965,U.S.,civilian,1,MSP,2009,259,STS-129
+"Creamer, Timothy J.",male,1959,U.S.,military,1,flight engineer,2009,3912,22
+"Virts, Terry W., Jr.",male,1967,U.S.,military,1,pilot,2010,330.1,STS-130
+"Virts, Terry W., Jr.",male,1967,U.S.,military,2,flight engineer,2014,4783.5,42
+"Skvortsov, Aleksandr Jr.",male,1966,U.S.S.R/Russia,military,1,commander,2010,4225,23
+"Skvortsov, Aleksandr Jr.",male,1966,U.S.S.R/Russia,military,2,commander,2014,4061,39
+"Skvortsov, Aleksandr Jr.",male,1966,U.S.S.R/Russia,military,3,commander,2019,4302.98,60
+"Korniyenko, Mikhail",male,1960,U.S.S.R/Russia,civilian,1,flight engineer,2010,4225,23
+"Korniyenko, Mikhail",male,1960,U.S.S.R/Russia,civilian,2,flight engineer,2015,7798,43
+"Dutton, James P.",male,1968,U.S.,military,1,pilot,2010,362,STS-131
+"Metcalf-Lindenburger, Dorothy M.",female,1975,U.S.,civilian,1,MSP,2010,362,STS-131
+"Yamazaki, Naoko",female,1970,Japan,civilian,1,MSP,2010,362.8,STS-131
+"Walker, Shannon",female,1965,U.S.,civilian,1,flight engineer,2010,3919.18,24
+"Skripochka, Oleg",male,1969,U.S.S.R/Russia,civilian,1,flight engineer,2010,3824,25
+"Skripochka, Oleg",male,1969,U.S.S.R/Russia,civilian,2,flight engineer,2016,4131.77,47
+"Skripochka, Oleg",male,1969,U.S.S.R/Russia,civilian,3,commander,2019,2697.53,61
+"Kondratyev, Dmitri",male,1969,U.S.S.R/Russia,military,1,commander,2010,3823,26
+"Samokutyayev, Aleksandr",male,1970,U.S.S.R/Russia,military,1,commander,2011,3941,27
+"Samokutyayev, Aleksandr",male,1970,U.S.S.R/Russia,military,2,commander,2014,4013,41
+"Borisenko, Andrei",male,1964,U.S.S.R/Russia,military,1,flight engineer,2011,3941,27
+"Borisenko, Andrei",male,1964,U.S.S.R/Russia,military,2,flight engineer,2016,10383.25,49
+"Furukawa, Satoshi",male,1964,Japan,civilian,1,flight engineer,2011,4014,28
+"Shkaplerov, Anton",male,1972,U.S.S.R/Russia,military,1,commander,2011,3967,29
+"Shkaplerov, Anton",male,1972,U.S.S.R/Russia,military,2,commander,2014,4792,42
+"Shkaplerov, Anton",male,1972,U.S.S.R/Russia,military,3,commander,2017,4037,54
+"Ivanishin, Anatoli",male,1969,U.S.S.R/Russia,military,1,commander,2011,3967,29
+"Ivanishin, Anatoli",male,1969,U.S.S.R/Russia,military,2,flight engineer,2016,2762,48
+"Revin, Sergei",male,1966,U.S.S.R/Russia,civilian,1,flight engineer,2012,2999,31
+"Liu, Wang",male,1969,China,military,1,flight engineer,2012,303.5,Shenzhou 9
+"Liu, Yang",female,1978,China,military,1,flight engineer,2012,303.5,Shenzhou 9
+"Novitski, Oleg",male,1971,U.S.S.R/Russia,military,1,commander,2012,3448,33
+"Novitski, Oleg",male,1971,U.S.S.R/Russia,military,2,commander,2016,4721.83,50
+"Tarelkin, Yevgeni",male,1974,U.S.S.R/Russia,military,1,flight engineer,2012,3448,33
+"Misurkin, Aleksandr",male,1977,U.S.S.R/Russia,military,1,flight engineer,2013,3990.25,35
+"Misurkin, Aleksandr",male,1977,U.S.S.R/Russia,military,2,commander,2017,4037.25,53
+"Parmitano, Luca",male,1976,Italy,military,1,flight engineer,2013,3990.28,36
+"Parmitano, Luca",male,1976,Italy,military,2,flight engineer,2019,4303.03,NA
+"Zhang, Xiaoguang",male,1968,China,military,1,flight engineer,2013,350,Shenzhou 10
+"Wang, Yapi",male,1980,China,military,1,flight engineer,2013,350,Shenzhou 10
+"Ryazanski, Sergei",male,1974,U.S.S.R/Russia,civilian,1,flight engineer,2013,3990,37
+"Ryazanski, Sergei",male,1974,U.S.S.R/Russia,civilian,2,commander,2017,3328.93,52
+"Hopkins, Michael Scott",male,1968,U.S.,military,1,flight engineer,2013,3990.42,37
+"Artemyev, Oleg",male,1970,U.S.S.R/Russia,military,1,flight engineer,2014,4062,39
+"Artemyev, Oleg",male,1970,U.S.S.R/Russia,military,2,commander,2018,4722,55
+"Wiseman, Gregory Reid",male,1975,U.S.,military,1,MSP,2014,3968.1,40
+"Gerst, Alexander",male,1976,Germany,civilian,1,flight engineer,2014,3968.02,40
+"Gerst, Alexander",male,1976,Germany,civilian,2,flight engineer,2018,4721.82,56
+"Serova, Yelena",female,1976,U.S.S.R/Russia,civilian,1,flight engineer,2014,4013,41
+"Cristofretti, Samantha",female,1977,Italy,military,1,flight engineer,2014,4783.5,42
+"Yui, Kimiya",male,1970,Japan,military,1,flight engineer,2015,3400,44
+"Lindgren, Kjell Norwood",male,1973,U.S.,military,1,flight engineer,2015,3400.15,44
+"Mogensen, Andreas",male,1976,Denmark,civilian,1,flight engineer,2015,236.23,Soyuz TMA-18M/16M
+Aidyn (Aydyn) Akanovich Aimbetov,male,1972,Kazakhstan,military,1,flight engineer,2015,236.23,Soyuz TMA-18M/16M
+"Peake, Timothy Nigel",male,1972,U.K.,military,1,pilot,2015,4462,46
+"Ovchinin, Aleksey",male,1971,U.S.S.R/Russia,military,1,commander,2016,4132,47
+"Ovchinin, Aleksey",male,1971,U.S.S.R/Russia,military,2,commander,2019,0,57
+"Ovchinin, Aleksey",male,1971,U.S.S.R/Russia,military,3,commander,2019,4863.75,59
+"Onishi, Takuya",male,1975,Japan,civilian,1,flight engineer,2016,6902.35,48
+"Rubins, Kathleen",female,1978,U.S.,civilian,1,flight engineer,2016,6902.35,48
+"Chen, Dong",male,1978,China,military,1,flight engineer,2016,774.5,Shenzhou 11
+"Ryzhikov, Sergey",male,1974,U.S.S.R/Russia,military,1,commander,2016,10383.25,49
+"Pesquet, Thomas",male,1978,France,civilian,1,flight engineer,2016,4721.83,50
+"Fischer, Jack",male,1974,U.S.,military,1,flight engineer,2017,3258.13,51
+"Vande Hei, Mark",male,1966,U.S.,military,1,flight engineer,2017,4037.23,53
+"Tingle, Scott",male,1965,U.S.,military,1,flight engineer,2017,4037,54
+"Kanai, Norishige",male,1976,Japan,civilian,1,flight engineer,2017,4037,54
+"Prokopyev, Sergei",male,1975,U.S.S.R/Russia,military,1,commander,2018,4722,56
+"Auñón-Chancellor, Serena",female,1976,U.S.,civilian,1,flight engineer,2018,4722,56
+"Hague, Tyler",male,1975,U.S.,military,1,flight engineer,2018,0,57
+"Hague, Tyler",male,1975,U.S.,military,2,flight engineer,2019,4864,59
+"Saint-Jaques, David",male,1970,Canada,civilian,1,flight engineer,2018,4887,57
+"McClain, Anne Charlotte",female,1979,U.S.,military,1,flight engineer,2018,4887,57
+"Koch, Christina",female,1979,U.S.,civilian,1,flight engineer,2019,7372.3,59
+"Morgan, Andrew",male,1976,U.S.,military,1,flight engineer,2019,4303.08,60
+"Meir, Jessica",female,1977,U.S.,civilian,1,flight engineer,2019,2697.6,60
+"Al Mansoori, Hazzaa",male,1983,UAE,military,1,spaceflight participant,2019,189,EP-19
