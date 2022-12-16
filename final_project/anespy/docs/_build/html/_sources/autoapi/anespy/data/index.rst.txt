@@ -1,0 +1,14 @@
+:py:mod:`anespy.data`
+=====================
+
+.. py:module:: anespy.data
+
+
+Package Contents
+----------------
+
+.. py:data:: __version__
+   
+
+   
+

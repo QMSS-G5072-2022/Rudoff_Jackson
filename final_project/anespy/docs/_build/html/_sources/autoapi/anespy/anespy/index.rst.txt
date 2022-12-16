@@ -1,0 +1,428 @@
+:py:mod:`anespy.anespy`
+=======================
+
+.. py:module:: anespy.anespy
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   anespy.anespy.ANES
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   anespy.anespy.editions
+   anespy.anespy.load_ANES_data
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   anespy.anespy.data_dict
+   anespy.anespy.duped_vars
+
+
+.. py:data:: data_dict
+   
+
+   
+
+.. py:data:: duped_vars
+   :annotation: = ['[a-zA-Z]\\d\\.\\s', '[a-zA-Z]\\d[a-zA-Z]\\.\\s', '[a-zA-Z]\\d[a-zA-Z]\\d\\.\\s',...
+
+   
+
+.. py:class:: ANES(data=None, index: Axes | None = None, columns: Axes | None = None, dtype: Dtype | None = None, copy: bool | None = None)
+
+   Bases: :py:obj:`pandas.DataFrame`
+
+   Two-dimensional, size-mutable, potentially heterogeneous tabular data.
+
+   Data structure also contains labeled axes (rows and columns).
+   Arithmetic operations align on both row and column labels. Can be
+   thought of as a dict-like container for Series objects. The primary
+   pandas data structure.
+
+   :param data: Dict can contain Series, arrays, constants, dataclass or list-like objects. If
+                data is a dict, column order follows insertion-order. If a dict contains Series
+                which have an index defined, it is aligned by its index.
+
+                .. versionchanged:: 0.25.0
+                   If data is a list of dicts, column order follows insertion-order.
+   :type data: ndarray (structured or homogeneous), Iterable, dict, or DataFrame
+   :param index: Index to use for resulting frame. Will default to RangeIndex if
+                 no indexing information part of input data and no index provided.
+   :type index: Index or array-like
+   :param columns: Column labels to use for resulting frame when data does not have them,
+                   defaulting to RangeIndex(0, 1, 2, ..., n). If data contains column labels,
+                   will perform column selection instead.
+   :type columns: Index or array-like
+   :param dtype: Data type to force. Only a single dtype is allowed. If None, infer.
+   :type dtype: dtype, default None
+   :param copy: Copy data from inputs.
+                For dict data, the default of None behaves like ``copy=True``.  For DataFrame
+                or 2d ndarray input, the default of None behaves like ``copy=False``.
+                If data is a dict containing one or more Series (possibly of different dtypes),
+                ``copy=False`` will ensure that these inputs are not copied.
+
+                .. versionchanged:: 1.3.0
+   :type copy: bool or None, default None
+
+   .. seealso::
+
+      :obj:`DataFrame.from_records`
+          Constructor from tuples, also record arrays.
+
+      :obj:`DataFrame.from_dict`
+          From dicts of Series, arrays, or dicts.
+
+      :obj:`read_csv`
+          Read a comma-separated values (csv) file into DataFrame.
+
+      :obj:`read_table`
+          Read general delimited file into DataFrame.
+
+      :obj:`read_clipboard`
+          Read text from clipboard into DataFrame.
+
+   .. rubric:: Notes
+
+   Please reference the :ref:`User Guide <basics.dataframe>` for more information.
+
+   .. rubric:: Examples
+
+   Constructing DataFrame from a dictionary.
+
+   >>> d = {'col1': [1, 2], 'col2': [3, 4]}
+   >>> df = pd.DataFrame(data=d)
+   >>> df
+      col1  col2
+   0     1     3
+   1     2     4
+
+   Notice that the inferred dtype is int64.
+
+   >>> df.dtypes
+   col1    int64
+   col2    int64
+   dtype: object
+
+   To enforce a single dtype:
+
+   >>> df = pd.DataFrame(data=d, dtype=np.int8)
+   >>> df.dtypes
+   col1    int8
+   col2    int8
+   dtype: object
+
+   Constructing DataFrame from a dictionary including Series:
+
+   >>> d = {'col1': [0, 1, 2, 3], 'col2': pd.Series([2, 3], index=[2, 3])}
+   >>> pd.DataFrame(data=d, index=[0, 1, 2, 3])
+      col1  col2
+   0     0   NaN
+   1     1   NaN
+   2     2   2.0
+   3     3   3.0
+
+   Constructing DataFrame from numpy ndarray:
+
+   >>> df2 = pd.DataFrame(np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]),
+   ...                    columns=['a', 'b', 'c'])
+   >>> df2
+      a  b  c
+   0  1  2  3
+   1  4  5  6
+   2  7  8  9
+
+   Constructing DataFrame from a numpy ndarray that has labeled columns:
+
+   >>> data = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)],
+   ...                 dtype=[("a", "i4"), ("b", "i4"), ("c", "i4")])
+   >>> df3 = pd.DataFrame(data, columns=['c', 'a'])
+   ...
+   >>> df3
+      c  a
+   0  3  1
+   1  6  4
+   2  9  7
+
+   Constructing DataFrame from dataclass:
+
+   >>> from dataclasses import make_dataclass
+   >>> Point = make_dataclass("Point", [("x", int), ("y", int)])
+   >>> pd.DataFrame([Point(0, 0), Point(0, 3), Point(2, 3)])
+      x  y
+   0  0  0
+   1  0  3
+   2  2  3
+
+   .. py:property:: _constructor
+
+      Used when a manipulation result has the same dimensions as the
+      original.
+
+   .. py:attribute:: _metadata
+      :annotation: = ['year']
+
+      
+
+   .. py:method:: add_year()
+
+      Insert a year column into an ANES object.
+
+      Parameters:
+      -----------
+      self : anespy.anespy.ANES
+          An ANES instance.
+
+      Returns:
+      --------
+      pandas.core.series.Series:
+          A column filled with n rows of the ANES object's year.
+
+      Example:
+      --------
+      >>> import anespy.anespy as anes
+      >>> data=load_ANES_data(2020)
+      >>> data.add_year()
+      >>> data.iloc[:, :5].head()
+         Year  version  V200001  V160001_orig  V200002
+      0  2020       -1   200015        401318        3
+      1  2020       -1   200022        300261        3
+      2  2020       -1   200039        400181        3
+      3  2020       -1   200046        300171        3
+      4  2020       -1   200053        405145        3
+
+
+   .. py:method:: convert_var_names(drop_extra=True)
+
+      Renames variables (column headers) to full, context-inclusive name from ANES codebook. Can also be used
+      backwards to rename variables to their "V____"-formatted name.
+
+      Parameters:
+      -----------
+      self : anespy.anespy.ANES
+          An ANES instance.
+      drop_extra : bool
+          A boolean indicating where columns not present in codebook should be dropped. Defaults to True.
+
+      Returns:
+      --------
+      self: anespy.anespy.ANES
+          An ANES object containing the selected colums and *n* number of respondents.
+
+      Example:
+      --------
+      >>> import anespy.anespy as anes
+      >>> data=load_ANES_data(2004)
+      >>> data.convert_var_names()
+      Converted to named variables.
+      >>> data.iloc[:, 100:102].head()
+         PreAdmin.37b. Comment: positive - enjoy surveys  PreAdmin.37c. Comment: other positive
+      0                                                5                                      1
+      1                                                5                                      5
+      2                                                5                                      1
+      3                                                5                                      1
+      4                                                5                                      5
+      # You can still convert these back!
+      >>> data.convert_var_names()
+      Converted to numbered variables.
+         V042037b  V042037c
+      0         5         1
+      1         5         5
+      2         5         1
+      3         5         1
+      4         5         5
+
+
+   .. py:method:: recode_to_char(col_in)
+
+      Recode an ANES column from numeric to a textual category.
+
+      Parameters:
+      -----------
+      self : anespy.anespy.ANES
+          An ANES instance.
+
+      col_in: str
+          Name of the column to be transformed.
+
+      Returns:
+      --------
+      pandas.core.series.Series
+          The recoded column.
+
+      Example:
+
+      >>> import anespy.anespy as anes
+      >>> data=anes.load_ANES_data(2008)
+      >>> data['V085409a']
+      0       12
+      1       -1
+      2       12
+      3       12
+      4       13
+              ..
+      2317    13
+      2318    12
+      2319    12
+      2320    12
+      2321     7
+      Name: V085409a, Length: 2322, dtype: int64
+      >>> data.recode_to_char('V085409a')
+      >>> data['V085409a']
+      0                  Negative - too complicated
+      1                                Inapplicable
+      2                  Negative - too complicated
+      3                  Negative - too complicated
+      4       Negative - boring/tedious/repetitious
+                              ...
+      2317    Negative - boring/tedious/repetitious
+      2318               Negative - too complicated
+      2319               Negative - too complicated
+      2320               Negative - too complicated
+      2321                              Unavailable
+      Name: V085409a, Length: 2322, dtype: category
+      Categories (6, object): ['Inapplicable', 'Negative - boring/tedious/repetitious',
+                              'Negative - general',
+                              'Negative - too complicated',
+                              'Negative - too long',
+                              'Unavailable']
+
+
+   .. py:method:: split_pre_post()
+
+      Split an ANES object between its Pre and Post-election variables.
+
+      Parameters:
+      -----------
+      self: anespy.anespy.ANES
+          An ANES instance.
+
+      Returns:
+      --------
+      df_pre : anespy.anespy.ANES
+          An ANES instance.
+
+      df_post : anespy.anespy.ANES
+          An ANES instance.
+
+      Example:
+
+      >>> import anespy.anespy as anes
+      >>> data=anes.load_ANES_data(2016)
+      >>> data.convert_var_names()
+          Converted to named variables.
+      >>> data_pre, data_post = data.split_pre_post()
+      >>> data_pre.head()
+      PRE: FTF ONLY: Audio Consent ...PRE ADMIN: Elapsed time interview...
+      0                             1  ...                       72.433333
+      1                             1  ...                       55.433333
+      2                             1  ...                       54.166667
+      3                             1  ...                       58.500000
+      4                             1  ...                       85.016667
+
+
+   .. py:method:: generate_sample(variables, n_respondents=1000)
+
+      Create a sample of data of *n* respondents from an ANES object.
+
+      Parameters:
+      -----------
+      self : anespy.anespy.ANES
+          An ANES instance.
+      variables : str or list()
+          A string or list of string names for the column(s) being sampled.
+      n_respondents : int
+          Size of the sample (defaults to 1000)
+
+      Returns:
+      --------
+      sample_df: anespy.anespy.ANES
+          An ANES object containing the selected colums and *n* number of respondents.
+
+      Example:
+      --------
+      >>> import anespy.anespy as anes
+      >>> data=load_ANES_data(2008)
+      >>> sample =  data.generate_sample(['V082423g', 'V082424'], n_respondents = 500)
+      >>> sample.head()
+            V082423g  V082424
+      1886         2        2
+      1294         3        1
+      472          3        1
+      135          5        1
+      139          7        2
+
+
+
+.. py:function:: editions()
+
+   Returns the editions of the ANES Time Series the package contains.
+
+   Parameters:
+   -----------
+   None
+
+   Returns:
+   --------
+   None
+
+   Example:
+   --------
+   >>> import anespy.anespy as anes
+   >>> anes.editions()
+   cumulative
+   2020
+   2016
+   2012
+   2008
+   2004
+   2000
+
+
+.. py:function:: load_ANES_data(year, add_names=False)
+
+   Acquires data from the ANES internal API as a zip file, before unzipping and instantiating an ANES object
+   for the selected year.
+
+   Parameters:
+   -----------
+   year : int
+       Year of the data to be acquired.
+   add_names : bool
+       A boolean indicating whether the convert_var_names() method should be applied on ingest. Defaults to False.
+
+   Returns:
+   --------
+   data: anespy.anespy.ANES
+       An ANES object containing the Time Series data from the selected year.
+
+   Example:
+   --------
+   >>> import anespy.anespy as anes
+   >>> data=load_ANES_data(2000, add_names = False) #not adding names
+   Converted to named variables.
+   >>> data.iloc[:, :5].head()
+      VERSION  DSETID  V000001  V000001a  V000002
+   0       -1      -1        1       787   1.2886
+   1       -1      -1        2      1271   0.8959
+   2       -1      -1        3       934   1.0454
+   3       -1      -1        4       285   0.6005
+   4       -1      -1        5       191   1.9270
+
+

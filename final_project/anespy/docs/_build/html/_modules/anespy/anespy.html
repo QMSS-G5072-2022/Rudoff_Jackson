@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>anespy.anespy &mdash; anespy  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> anespy
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../example.html">Example usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../autoapi/index.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">anespy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">anespy.anespy</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for anespy.anespy</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">importlib.resources</span> <span class="kn">import</span> <span class="n">files</span><span class="p">,</span> <span class="n">as_file</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">requests</span> 
+<span class="kn">import</span> <span class="nn">zipfile</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="c1">######### Suppress FutureWarnings</span>
+
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+
+<span class="c1">######### DICTIONARIES AND RE-USED VALUES</span>
+
+<span class="n">data_dict</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;cumulative&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2022/09/anes_timeseries_cdf_csv_20220916.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;anes_timeseries_cdf_csv_20220916.csv&#39;</span><span class="p">],</span>
+        <span class="mi">2020</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2022/02/anes_timeseries_2020_csv_20220210.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;anes_timeseries_2020_csv_20220210.csv&#39;</span><span class="p">],</span>
+        <span class="mi">2016</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2018/12/anes_timeseries_2016.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;anes_timeseries_2016_rawdata.txt&#39;</span><span class="p">],</span>
+        <span class="mi">2012</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2018/06/anes_timeseries_2012.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;anes_timeseries_2012_rawdata.txt&#39;</span><span class="p">],</span>
+        <span class="mi">2008</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2018/06/anes_timeseries_2008.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;anes_timeseries_2008_rawdata.txt&#39;</span><span class="p">],</span>
+        <span class="mi">2004</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2018/06/anes2004.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;nes04dat.txt&#39;</span><span class="p">],</span>
+        <span class="mi">2000</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2018/06/anes_2000prepost.zip&#39;</span><span class="p">,</span> <span class="s1">&#39;anes_2000prepost_dat.txt&#39;</span><span class="p">]}</span>
+
+<span class="n">duped_vars</span> <span class="o">=</span> <span class="p">[</span><span class="sa">r</span><span class="s1">&#39;[a-zA-Z]\d\.\s&#39;</span><span class="p">,</span> 
+                    <span class="sa">r</span><span class="s1">&#39;[a-zA-Z]\d[a-zA-Z]\.\s&#39;</span><span class="p">,</span> 
+                    <span class="sa">r</span><span class="s1">&#39;[a-zA-Z]\d[a-zA-Z]\d\.\s&#39;</span><span class="p">,</span> 
+                    <span class="sa">r</span><span class="s1">&#39;[a-zA-Z][0-9]+[a-zA-Z]\.\s&#39;</span><span class="p">,</span> 
+                    <span class="sa">r</span><span class="s1">&#39;[a-zA-Z][0-9]+[a-zA-Z]\d[a-zA-Z]\.\s&#39;</span><span class="p">,</span> 
+                    <span class="sa">r</span><span class="s1">&#39;[a-zA-Z]\d[a-zA-Z]\.\s&#39;</span><span class="p">,</span> 
+                    <span class="sa">r</span><span class="s1">&#39;[a-zA-Z]\d[a-zA-Z]\.\s&#39;</span><span class="p">,</span> 
+                    <span class="sa">r</span><span class="s1">&#39;[a-zA-Z]\d\d\.\s&#39;</span><span class="p">]</span>
+
+<span class="c1">######### ANES CLASS</span>
+
+<div class="viewcode-block" id="ANES"><a class="viewcode-back" href="../../autoapi/anespy/anespy/index.html#anespy.anespy.ANES">[docs]</a><span class="k">class</span> <span class="nc">ANES</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">):</span>
+   
+    <span class="n">_metadata</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">_constructor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">ANES</span>
+
+<div class="viewcode-block" id="ANES.add_year"><a class="viewcode-back" href="../../autoapi/anespy/anespy/index.html#anespy.anespy.ANES.add_year">[docs]</a>    <span class="k">def</span> <span class="nf">add_year</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Insert a year column into an ANES object. </span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        -----------</span>
+<span class="sd">        self : anespy.anespy.ANES</span>
+<span class="sd">            An ANES instance.  </span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        --------</span>
+<span class="sd">        pandas.core.series.Series: </span>
+<span class="sd">            A column filled with n rows of the ANES object&#39;s year. </span>
+
+<span class="sd">        Example:</span>
+<span class="sd">        --------</span>
+<span class="sd">        &gt;&gt;&gt; import anespy.anespy as anes</span>
+<span class="sd">        &gt;&gt;&gt; data=load_ANES_data(2020)</span>
+<span class="sd">        &gt;&gt;&gt; data.add_year()</span>
+<span class="sd">        &gt;&gt;&gt; data.iloc[:, :5].head()</span>
+<span class="sd">           Year  version  V200001  V160001_orig  V200002</span>
+<span class="sd">        0  2020       -1   200015        401318        3</span>
+<span class="sd">        1  2020       -1   200022        300261        3</span>
+<span class="sd">        2  2020       -1   200039        400181        3</span>
+<span class="sd">        3  2020       -1   200046        300171        3</span>
+<span class="sd">        4  2020       -1   200053        405145        3</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span> 
+                <span class="bp">self</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Note: Year already added.&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------------------------&#39;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="bp">self</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cumulative data does not have a year.&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ANES.convert_var_names"><a class="viewcode-back" href="../../autoapi/anespy/anespy/index.html#anespy.anespy.ANES.convert_var_names">[docs]</a>    <span class="k">def</span> <span class="nf">convert_var_names</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drop_extra</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Renames variables (column headers) to full, context-inclusive name from ANES codebook. Can also be used </span>
+<span class="sd">        backwards to rename variables to their &quot;V____&quot;-formatted name. </span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        -----------</span>
+<span class="sd">        self : anespy.anespy.ANES</span>
+<span class="sd">            An ANES instance.</span>
+<span class="sd">        drop_extra : bool</span>
+<span class="sd">            A boolean indicating where columns not present in codebook should be dropped. Defaults to True.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        --------</span>
+<span class="sd">        self: anespy.anespy.ANES</span>
+<span class="sd">            An ANES object containing the selected colums and *n* number of respondents. </span>
+
+<span class="sd">        Example:</span>
+<span class="sd">        --------</span>
+<span class="sd">        &gt;&gt;&gt; import anespy.anespy as anes</span>
+<span class="sd">        &gt;&gt;&gt; data=load_ANES_data(2004)</span>
+<span class="sd">        &gt;&gt;&gt; data.convert_var_names()</span>
+<span class="sd">        Converted to named variables.</span>
+<span class="sd">        &gt;&gt;&gt; data.iloc[:, 100:102].head()</span>
+<span class="sd">           PreAdmin.37b. Comment: positive - enjoy surveys  PreAdmin.37c. Comment: other positive</span>
+<span class="sd">        0                                                5                                      1</span>
+<span class="sd">        1                                                5                                      5</span>
+<span class="sd">        2                                                5                                      1</span>
+<span class="sd">        3                                                5                                      1</span>
+<span class="sd">        4                                                5                                      5</span>
+<span class="sd">        # You can still convert these back!</span>
+<span class="sd">        &gt;&gt;&gt; data.convert_var_names()</span>
+<span class="sd">        Converted to numbered variables.</span>
+<span class="sd">           V042037b  V042037c</span>
+<span class="sd">        0         5         1</span>
+<span class="sd">        1         5         5</span>
+<span class="sd">        2         5         1</span>
+<span class="sd">        3         5         1</span>
+<span class="sd">        4         5         5</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">print_out</span><span class="o">=</span> <span class="s1">&#39;named variables&#39;</span>
+        <span class="n">src</span> <span class="o">=</span> <span class="n">files</span><span class="p">(</span><span class="s1">&#39;anespy.var_lists&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s1">_varlist.csv&#39;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="n">as_file</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="k">as</span> <span class="n">new_vars</span><span class="p">:</span>
+            <span class="n">new_vars</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">new_vars</span><span class="p">)</span>
+        <span class="n">new_vars</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">new_vars</span><span class="p">[</span><span class="s1">&#39;Number&#39;</span><span class="p">],</span> <span class="n">new_vars</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">!=</span> <span class="mi">2012</span><span class="p">:</span>
+            <span class="n">new_vars</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="o">.</span><span class="n">capitalize</span><span class="p">():</span><span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">new_vars</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">pass</span>
+
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+            <span class="n">new_vars</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;Year&#39;</span><span class="p">:</span> <span class="s1">&#39;Year&#39;</span><span class="p">})</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">pass</span>
+        
+        <span class="k">if</span> <span class="nb">sum</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="n">var</span><span class="p">)</span> <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">18</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2004</span><span class="p">,</span> <span class="mi">2008</span><span class="p">]:</span>
+                <span class="n">src_vars</span> <span class="o">=</span> <span class="n">files</span><span class="p">(</span><span class="s1">&#39;anespy.data&#39;</span><span class="p">)</span>
+                <span class="k">with</span> <span class="n">as_file</span><span class="p">(</span><span class="n">src_vars</span><span class="p">)</span> <span class="k">as</span> <span class="n">data_out</span><span class="p">:</span>
+                    <span class="n">new_vars</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">data_out</span><span class="si">}</span><span class="s2">/updated_vars</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s2">.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">pass</span>
+            <span class="n">rev_vars</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">reversed</span><span class="p">,</span> <span class="n">new_vars</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">rev_vars</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">print_out</span> <span class="o">=</span> <span class="s1">&#39;numbered variables&#39;</span>
+            
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">drop_extra</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="bp">self</span> <span class="k">if</span> <span class="n">col</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">new_vars</span><span class="o">.</span><span class="n">keys</span><span class="p">()],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="s1">&#39;cumulative&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">new_vars</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">&lt;=</span> <span class="mi">2008</span><span class="p">:</span>
+    
+                    <span class="n">new_vars_vals</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">new_vars</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+                    <span class="n">fixed_vals</span> <span class="o">=</span> <span class="p">[]</span>
+                    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">new_vars_vals</span><span class="p">):</span>
+                        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="mi">2008</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">idx</span> <span class="o">&gt;=</span> <span class="mi">402</span> <span class="ow">and</span> <span class="n">idx</span> <span class="o">&lt;=</span> <span class="mi">817</span> <span class="p">:</span>
+                                    <span class="n">fixed_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">duped_vars</span><span class="p">),</span><span class="s1">&#39;PRE: &#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span>
+                            <span class="k">else</span><span class="p">:</span> 
+                                    <span class="n">fixed_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">duped_vars</span><span class="p">),</span><span class="s1">&#39;POST: &#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span>
+                        
+                        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="mi">2004</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">idx</span> <span class="o">&gt;=</span> <span class="mi">221</span> <span class="ow">and</span> <span class="n">idx</span> <span class="o">&lt;=</span> <span class="mi">842</span> <span class="p">:</span>
+                                    <span class="n">fixed_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">duped_vars</span><span class="p">),</span><span class="s1">&#39;PRE: &#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span>
+                            <span class="k">else</span><span class="p">:</span> 
+                                    <span class="n">fixed_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">duped_vars</span><span class="p">),</span><span class="s1">&#39;POST: &#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span>
+                        
+                        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="mi">2000</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">idx</span> <span class="o">&gt;=</span> <span class="mi">305</span> <span class="ow">and</span> <span class="n">idx</span> <span class="o">&lt;=</span> <span class="mi">1112</span> <span class="p">:</span>
+                                    <span class="n">fixed_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">duped_vars</span><span class="p">),</span><span class="s1">&#39;PRE: &#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span>
+                            <span class="k">else</span><span class="p">:</span> 
+                                    <span class="n">fixed_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">duped_vars</span><span class="p">),</span><span class="s1">&#39;POST: &#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span>
+
+
+                    <span class="n">fixed_vars</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">new_vars</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">fixed_vals</span><span class="p">))</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">fixed_vars</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+                    
+                    <span class="n">src_vars</span> <span class="o">=</span> <span class="n">files</span><span class="p">(</span><span class="s1">&#39;anespy.data&#39;</span><span class="p">)</span>
+                    <span class="k">with</span> <span class="n">as_file</span><span class="p">(</span><span class="n">src_vars</span><span class="p">)</span> <span class="k">as</span> <span class="n">data_out</span><span class="p">:</span>
+                        <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">fixed_vars</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">data_out</span><span class="si">}</span><span class="s2">/updated_vars</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s2">.pkl&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span> 
+                    <span class="bp">self</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">new_vars</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Converted to </span><span class="si">{</span><span class="n">print_out</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="ANES.recode_to_char"><a class="viewcode-back" href="../../autoapi/anespy/anespy/index.html#anespy.anespy.ANES.recode_to_char">[docs]</a>    <span class="k">def</span> <span class="nf">recode_to_char</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">col_in</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Recode an ANES column from numeric to a textual category.   </span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        -----------</span>
+<span class="sd">        self : anespy.anespy.ANES</span>
+<span class="sd">            An ANES instance. </span>
+<span class="sd">        </span>
+<span class="sd">        col_in: str</span>
+<span class="sd">            Name of the column to be transformed. </span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        --------</span>
+<span class="sd">        pandas.core.series.Series</span>
+<span class="sd">            The recoded column. </span>
+
+<span class="sd">        Example:</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; import anespy.anespy as anes</span>
+<span class="sd">        &gt;&gt;&gt; data=anes.load_ANES_data(2008)</span>
+<span class="sd">        &gt;&gt;&gt; data[&#39;V085409a&#39;]</span>
+<span class="sd">        0       12</span>
+<span class="sd">        1       -1</span>
+<span class="sd">        2       12</span>
+<span class="sd">        3       12</span>
+<span class="sd">        4       13</span>
+<span class="sd">                ..</span>
+<span class="sd">        2317    13</span>
+<span class="sd">        2318    12</span>
+<span class="sd">        2319    12</span>
+<span class="sd">        2320    12</span>
+<span class="sd">        2321     7</span>
+<span class="sd">        Name: V085409a, Length: 2322, dtype: int64</span>
+<span class="sd">        &gt;&gt;&gt; data.recode_to_char(&#39;V085409a&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; data[&#39;V085409a&#39;]</span>
+<span class="sd">        0                  Negative - too complicated</span>
+<span class="sd">        1                                Inapplicable</span>
+<span class="sd">        2                  Negative - too complicated</span>
+<span class="sd">        3                  Negative - too complicated</span>
+<span class="sd">        4       Negative - boring/tedious/repetitious</span>
+<span class="sd">                                ...                  </span>
+<span class="sd">        2317    Negative - boring/tedious/repetitious</span>
+<span class="sd">        2318               Negative - too complicated</span>
+<span class="sd">        2319               Negative - too complicated</span>
+<span class="sd">        2320               Negative - too complicated</span>
+<span class="sd">        2321                              Unavailable</span>
+<span class="sd">        Name: V085409a, Length: 2322, dtype: category</span>
+<span class="sd">        Categories (6, object): [&#39;Inapplicable&#39;, &#39;Negative - boring/tedious/repetitious&#39;,</span>
+<span class="sd">                                &#39;Negative - general&#39;, </span>
+<span class="sd">                                &#39;Negative - too complicated&#39;, </span>
+<span class="sd">                                &#39;Negative - too long&#39;,</span>
+<span class="sd">                                &#39;Unavailable&#39;] </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="k">try</span><span class="p">:</span> 
+            <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="n">col_in</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">!=</span> <span class="nb">str</span><span class="p">,</span> <span class="s1">&#39;Column data must be numeric.&#39;</span>
+
+            <span class="n">src_var_labs</span> <span class="o">=</span> <span class="n">files</span><span class="p">(</span><span class="s1">&#39;anespy.data&#39;</span><span class="p">)</span>
+            <span class="k">with</span> <span class="n">as_file</span><span class="p">(</span><span class="n">src_var_labs</span><span class="p">)</span> <span class="k">as</span> <span class="n">lab_path</span><span class="p">:</span>
+                <span class="n">recode_dict</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">lab_path</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s1">_labels_values.csv&#39;</span><span class="p">)</span>
+            <span class="n">recode_dict</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">recode_dict</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">recode_dict</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recode_dict</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;-?\d+\.\s&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="n">recode_dict</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recode_dict</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">!=</span> <span class="mi">2012</span><span class="p">:</span>
+                <span class="n">recode_dict</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recode_dict</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">pass</span>
+            
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">col_in</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="ow">and</span> <span class="s1">&#39;_&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">col_in</span><span class="p">:</span>
+                <span class="n">src</span> <span class="o">=</span> <span class="n">files</span><span class="p">(</span><span class="s1">&#39;anespy.var_lists&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s1">_varlist.csv&#39;</span><span class="p">)</span>
+                <span class="k">with</span> <span class="n">as_file</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="k">as</span> <span class="n">new_vars</span><span class="p">:</span>
+                    <span class="n">new_vars</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">new_vars</span><span class="p">)</span>
+                <span class="n">new_vars</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">new_vars</span><span class="p">[</span><span class="s1">&#39;Number&#39;</span><span class="p">],</span> <span class="n">new_vars</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]))</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="o">!=</span> <span class="mi">2012</span><span class="p">:</span>
+                    <span class="n">new_vars</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="o">.</span><span class="n">capitalize</span><span class="p">():</span><span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">new_vars</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">pass</span>
+                <span class="n">recode_dict</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recode_dict</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">new_vars</span><span class="p">)</span>
+                <span class="n">col_in</span> <span class="o">=</span> <span class="n">new_vars</span><span class="p">[</span><span class="n">col_in</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span> 
+                <span class="k">pass</span>
+
+            <span class="n">recode_dict</span> <span class="o">=</span> <span class="n">recode_dict</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">])</span>
+            <span class="n">recode_dict</span> <span class="o">=</span> <span class="n">recode_dict</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="s1">&#39;list&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="n">col_in</span><span class="p">]):</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">year</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2008</span><span class="p">]:</span>
+                    <span class="n">tmp_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="n">col_in</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="nb">int</span><span class="p">((</span><span class="n">row</span><span class="p">)))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">tmp_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="n">col_in</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">((</span><span class="n">row</span><span class="p">)))</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">tmp_tuple</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">30</span> <span class="ow">and</span> <span class="n">tmp_tuple</span> <span class="ow">in</span> <span class="n">recode_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                    <span class="bp">self</span><span class="p">[</span><span class="n">col_in</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">recode_dict</span><span class="p">[</span><span class="n">tmp_tuple</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">elif</span> <span class="bp">self</span><span class="p">[</span><span class="n">col_in</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="p">[</span><span class="n">col_in</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Inapplicable&#39;</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="p">[</span><span class="n">col_in</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Unavailable&#39;</span>
+            <span class="bp">self</span><span class="p">[</span><span class="n">col_in</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please use original variable names.&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="ANES.split_pre_post"><a class="viewcode-back" href="../../autoapi/anespy/anespy/index.html#anespy.anespy.ANES.split_pre_post">[docs]</a>    <span class="k">def</span> <span class="nf">split_pre_post</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Split an ANES object between its Pre and Post-election variables. </span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        -----------</span>
+<span class="sd">        self: anespy.anespy.ANES</span>
+<span class="sd">            An ANES instance.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        --------</span>
+<span class="sd">        df_pre : anespy.anespy.ANES</span>
+<span class="sd">            An ANES instance.</span>
+
+<span class="sd">        df_post : anespy.anespy.ANES</span>
+<span class="sd">            An ANES instance.</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; import anespy.anespy as anes</span>
+<span class="sd">        &gt;&gt;&gt; data=anes.load_ANES_data(2016)</span>
+<span class="sd">        &gt;&gt;&gt; data.convert_var_names()</span>
+<span class="sd">            Converted to named variables.</span>
+<span class="sd">        &gt;&gt;&gt; data_pre, data_post = data.split_pre_post()</span>
+<span class="sd">        &gt;&gt;&gt; data_pre.head()</span>
+<span class="sd">        PRE: FTF ONLY: Audio Consent ...PRE ADMIN: Elapsed time interview...</span>
+<span class="sd">        0                             1  ...                       72.433333       </span>
+<span class="sd">        1                             1  ...                       55.433333       </span>
+<span class="sd">        2                             1  ...                       54.166667       </span>
+<span class="sd">        3                             1  ...                       58.500000       </span>
+<span class="sd">        4                             1  ...                       85.016667 </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">pre</span><span class="p">,</span> <span class="n">post</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="nb">any</span><span class="p">(</span>
+            <span class="n">match</span> <span class="ow">in</span> <span class="n">col</span> <span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;PRE:&#39;</span><span class="p">,</span> <span class="s1">&#39;PRE ADMIN:&#39;</span><span class="p">,</span> <span class="s1">&#39;Pre &#39;</span><span class="p">,</span> <span class="s1">&#39;Pre.&#39;</span><span class="p">,</span> <span class="s1">&#39;Pre-&#39;</span><span class="p">])],</span> <span class="p">[</span>
+            <span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="nb">any</span><span class="p">(</span>
+                <span class="n">match</span> <span class="ow">in</span> <span class="n">col</span> <span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;POST:&#39;</span><span class="p">,</span> <span class="s1">&#39;POST ADMIN:&#39;</span><span class="p">,</span> <span class="s1">&#39;Post &#39;</span><span class="p">,</span> <span class="s1">&#39;Post.&#39;</span><span class="p">,</span> <span class="s1">&#39;Post-&#39;</span><span class="p">])]</span>
+
+        <span class="n">df_pre</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="n">pre</span><span class="p">]</span>
+        <span class="n">df_post</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="n">post</span><span class="p">]</span>
+
+        <span class="k">return</span><span class="p">(</span><span class="n">df_pre</span><span class="p">,</span> <span class="n">df_post</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ANES.generate_sample"><a class="viewcode-back" href="../../autoapi/anespy/anespy/index.html#anespy.anespy.ANES.generate_sample">[docs]</a>    <span class="k">def</span> <span class="nf">generate_sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">variables</span><span class="p">,</span> <span class="n">n_respondents</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Create a sample of data of *n* respondents from an ANES object.</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        -----------</span>
+<span class="sd">        self : anespy.anespy.ANES</span>
+<span class="sd">            An ANES instance.</span>
+<span class="sd">        variables : str or list()</span>
+<span class="sd">            A string or list of string names for the column(s) being sampled.</span>
+<span class="sd">        n_respondents : int</span>
+<span class="sd">            Size of the sample (defaults to 1000)</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        --------</span>
+<span class="sd">        sample_df: anespy.anespy.ANES</span>
+<span class="sd">            An ANES object containing the selected colums and *n* number of respondents. </span>
+
+<span class="sd">        Example:</span>
+<span class="sd">        --------</span>
+<span class="sd">        &gt;&gt;&gt; import anespy.anespy as anes</span>
+<span class="sd">        &gt;&gt;&gt; data=load_ANES_data(2008)</span>
+<span class="sd">        &gt;&gt;&gt; sample =  data.generate_sample([&#39;V082423g&#39;, &#39;V082424&#39;], n_respondents = 500)</span>
+<span class="sd">        &gt;&gt;&gt; sample.head()</span>
+<span class="sd">              V082423g  V082424</span>
+<span class="sd">        1886         2        2</span>
+<span class="sd">        1294         3        1</span>
+<span class="sd">        472          3        1</span>
+<span class="sd">        135          5        1</span>
+<span class="sd">        139          7        2</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">sample_df</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="n">variables</span><span class="p">]</span>
+        <span class="n">sample_df</span> <span class="o">=</span> <span class="n">sample_df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n_respondents</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">sample_df</span></div></div>
+    
+
+<span class="c1">######### DATA FUNCTIONS</span>
+
+<div class="viewcode-block" id="editions"><a class="viewcode-back" href="../../autoapi/anespy/anespy/index.html#anespy.anespy.editions">[docs]</a><span class="k">def</span> <span class="nf">editions</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Returns the editions of the ANES Time Series the package contains. </span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        -----------</span>
+<span class="sd">        None </span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        --------</span>
+<span class="sd">        None</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">        --------</span>
+<span class="sd">        &gt;&gt;&gt; import anespy.anespy as anes</span>
+<span class="sd">        &gt;&gt;&gt; anes.editions()</span>
+<span class="sd">        cumulative</span>
+<span class="sd">        2020</span>
+<span class="sd">        2016</span>
+<span class="sd">        2012</span>
+<span class="sd">        2008</span>
+<span class="sd">        2004</span>
+<span class="sd">        2000</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+    <span class="k">for</span> <span class="n">keys</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">data_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="load_ANES_data"><a class="viewcode-back" href="../../autoapi/anespy/anespy/index.html#anespy.anespy.load_ANES_data">[docs]</a><span class="k">def</span> <span class="nf">load_ANES_data</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">add_names</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span> 
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Acquires data from the ANES internal API as a zip file, before unzipping and instantiating an ANES object</span>
+<span class="sd">        for the selected year. </span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">        -----------</span>
+<span class="sd">        year : int</span>
+<span class="sd">            Year of the data to be acquired. </span>
+<span class="sd">        add_names : bool</span>
+<span class="sd">            A boolean indicating whether the convert_var_names() method should be applied on ingest. Defaults to False.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">        --------</span>
+<span class="sd">        data: anespy.anespy.ANES</span>
+<span class="sd">            An ANES object containing the Time Series data from the selected year. </span>
+
+<span class="sd">        Example:</span>
+<span class="sd">        --------</span>
+<span class="sd">        &gt;&gt;&gt; import anespy.anespy as anes</span>
+<span class="sd">        &gt;&gt;&gt; data=load_ANES_data(2000, add_names = False) #not adding names</span>
+<span class="sd">        Converted to named variables.</span>
+<span class="sd">        &gt;&gt;&gt; data.iloc[:, :5].head()</span>
+<span class="sd">           VERSION  DSETID  V000001  V000001a  V000002</span>
+<span class="sd">        0       -1      -1        1       787   1.2886</span>
+<span class="sd">        1       -1      -1        2      1271   0.8959</span>
+<span class="sd">        2       -1      -1        3       934   1.0454</span>
+<span class="sd">        3       -1      -1        4       285   0.6005</span>
+<span class="sd">        4       -1      -1        5       191   1.9270</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+    <span class="n">src</span> <span class="o">=</span> <span class="n">files</span><span class="p">(</span><span class="s1">&#39;anespy.data&#39;</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">as_file</span><span class="p">(</span><span class="n">src</span><span class="p">)</span> <span class="k">as</span> <span class="n">data</span><span class="p">:</span>
+        <span class="n">param</span> <span class="o">=</span> <span class="n">data_dict</span><span class="p">[</span><span class="n">year</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;https://electionstudies.org/wp-content/uploads/</span><span class="si">{</span><span class="n">param</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">zipped</span> <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">))</span>
+        <span class="n">zipped</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">data_dict</span><span class="p">[</span><span class="n">year</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">path</span><span class="o">=</span><span class="n">src</span><span class="p">)</span>
+
+    
+    <span class="n">src_data</span> <span class="o">=</span> <span class="n">files</span><span class="p">(</span><span class="s1">&#39;anespy.data&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="n">data_dict</span><span class="p">[</span><span class="n">year</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">with</span> <span class="n">as_file</span><span class="p">(</span><span class="n">src_data</span><span class="p">)</span> <span class="k">as</span> <span class="n">in_data</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">year</span> <span class="o">==</span> <span class="s1">&#39;cumulative&#39;</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">in_data</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">year</span> <span class="o">&gt;=</span> <span class="mi">2008</span> <span class="ow">and</span> <span class="n">year</span> <span class="o">&lt;=</span> <span class="mi">2016</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">in_data</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;|&#39;</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;iso-8859-1&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">in_data</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="n">data_obj</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">([</span><span class="s1">&#39;object&#39;</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">data_obj</span><span class="p">:</span>
+            <span class="n">data_obj</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_obj</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(\. Inapplicable)|(\. Inap)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span>
+                <span class="sa">r</span><span class="s1">&#39;^\s*$&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="n">data_obj</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_obj</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-1&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">data_num</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="s1">&#39;number&#39;</span><span class="p">)</span> 
+        <span class="n">data_num</span> <span class="o">=</span> <span class="n">data_num</span><span class="o">.</span><span class="n">applymap</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">x</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="n">data_num</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_num</span>
+
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="k">pass</span>
+    
+    <span class="n">data</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">ANES</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">year</span> <span class="o">=</span> <span class="n">year</span>
+
+    <span class="k">if</span> <span class="n">add_names</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">src</span> <span class="o">=</span> <span class="n">files</span><span class="p">(</span><span class="s1">&#39;anespy.var_lists&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s1">_varlist.csv&#39;</span><span class="p">)</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">convert_var_names</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+    <span class="k">return</span> <span class="n">data</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Jackson Rudoff.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

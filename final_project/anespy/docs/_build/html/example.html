@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Example usage &mdash; anespy  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Changelog" href="changelog.html" />
+    <link rel="prev" title="ANESPy" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> anespy
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Example usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#loading-anes-data">Loading ANES Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-anes-class">The <code class="docutils literal notranslate"><span class="pre">ANES</span></code> Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-years-to-the-data">Adding Years to the Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#converting-variable-names">Converting Variable Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recoding-to-categories">Recoding To Categories</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-note-about-variable-names">A Note About Variable Names</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#split-pre-post-variables">Split Pre &amp; Post Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generate-a-sample">Generate a Sample</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="autoapi/index.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">anespy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Example usage</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/example.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="example-usage">
+<h1>Example usage<a class="headerlink" href="#example-usage" title="Permalink to this heading"></a></h1>
+<p>To use <code class="docutils literal notranslate"><span class="pre">anespy</span></code> in a project:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import anespy.anespy as anes
+
+print(anespy.__version__)
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">anespy.anespy</span> <span class="k">as</span> <span class="nn">anes</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="n">anespy</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;anespy&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<section id="loading-anes-data">
+<h2>Loading ANES Data<a class="headerlink" href="#loading-anes-data" title="Permalink to this heading"></a></h2>
+<p>One of the primary challenges of working with ANES data is that it’s all over the place, and there is no <em>true</em> API for repeatedly accessing the data. Getting data files requires clicking a button for the format you’d like, which means that there are no user-facing static links for getting data. However, there is a somewhat hidden internal API that the site makes requests to when you select the file you wish to download. This package leverages this request system to acquire the datasets.</p>
+<p>The function <code class="docutils literal notranslate"><span class="pre">load_ANES_data(year,</span> <span class="pre">add_names</span> <span class="pre">=</span> <span class="pre">False)</span></code> takes two arguments:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">year</span></code>: year of the data you would like to access</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">add_names</span></code>: if you want to swap the variable names for their more complete, context-inclusive names (defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>)</p></li>
+</ol>
+<p>For example, say you wanted to pull the 2016 version of the main ANES Time Series:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data = anes.load_ANES_data(2016)
+data.head()
+</pre></div>
+</div>
+</div>
+</div>
+<p>This package (at present) provides support for only the main Time Series supplements for the ANES going back to 2000. To check what versions are available, you can use the <code class="docutils literal notranslate"><span class="pre">editions()</span></code> method.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>anes.editions()
+</pre></div>
+</div>
+</div>
+</div>
+<p>But there is something essential to note here about the data we just loaded. Though it is a DataFrame, it also <em>isn’t</em> a DataFrame.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>type(data)
+</pre></div>
+</div>
+</div>
+</div>
+<p>As part of the acquisition, the data are instantiated as an <code class="docutils literal notranslate"><span class="pre">ANES</span></code> object.</p>
+</section>
+<section id="the-anes-class">
+<h2>The <code class="docutils literal notranslate"><span class="pre">ANES</span></code> Class<a class="headerlink" href="#the-anes-class" title="Permalink to this heading"></a></h2>
+<p>Part of this package is the <code class="docutils literal notranslate"><span class="pre">ANES</span></code> class, which is a child of <code class="docutils literal notranslate"><span class="pre">Pandas.DataFrame</span></code>. Much of the functionality of <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> applies to work with ANES data, but there are consistent properties across ANES Time Series instances that make them worthy of additional methods.</p>
+<p>When you load ANES data, it is instantiated as an <code class="docutils literal notranslate"><span class="pre">ANES</span></code> object with a <code class="docutils literal notranslate"><span class="pre">year</span></code> property. For example, the data we just loaded:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data.year
+</pre></div>
+</div>
+</div>
+</div>
+<p>This property is very useful for class methods, or if you’re transforming and combining datasets from multiple years.</p>
+</section>
+<section id="adding-years-to-the-data">
+<h2>Adding Years to the Data<a class="headerlink" href="#adding-years-to-the-data" title="Permalink to this heading"></a></h2>
+<p>An advantage of the <code class="docutils literal notranslate"><span class="pre">ANES</span></code> class is that certain transformations and functions can access the year of the Time Series automatically. For example, a common problem with ANES data is that they do not include a <strong>Year</strong> column by default outside of the long <strong>version</strong> name. One of the built-ins with this package is the class method <code class="docutils literal notranslate"><span class="pre">add_year(self)</span></code>, which appends a <strong>Year</strong> column to the beginning of the <code class="docutils literal notranslate"><span class="pre">ANES</span></code> object.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data.add_year()
+data.head()
+</pre></div>
+</div>
+</div>
+</div>
+<p>This can be especially useful for data intended to be exported, joining variables across time series, or merging ANES samples with other datasets from the same year.</p>
+</section>
+<section id="converting-variable-names">
+<h2>Converting Variable Names<a class="headerlink" href="#converting-variable-names" title="Permalink to this heading"></a></h2>
+<p>Something you might have noticed about the example data is that the variable names are non-identifying. Typically, work with ANES data requires referencing a codebook to understand what the variables you’re working with are. This is only the beginning of the issues with ANES variable names, but included in this package is <code class="docutils literal notranslate"><span class="pre">convert_var_names(self,</span> <span class="pre">drop_extra</span> <span class="pre">=</span> <span class="pre">True)</span></code>, which recodes the variable names as their full title from the codebook.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data.convert_var_names()
+data.head()
+</pre></div>
+</div>
+</div>
+</div>
+<p>But if you change your mind at any point, this transformation can be undone:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data.convert_var_names()
+data.head()
+</pre></div>
+</div>
+</div>
+</div>
+<p>Something to note is that you may lose some variables because of a mismatch between the codebook’s listed variables and what is actually provided in the data. If you would like to retain the extra data and manually search these mystery variables, you have the option to set <code class="docutils literal notranslate"><span class="pre">drop_extra</span></code> to false during the initial conversion.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data = anes.load_ANES_data(2016)
+data.convert_var_names(drop_extra = False)
+data.head()
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="recoding-to-categories">
+<h2>Recoding To Categories<a class="headerlink" href="#recoding-to-categories" title="Permalink to this heading"></a></h2>
+<p>Another disadvantage of ANES data ‘as-is’ is that the data are that most of the variables are factors, but are inconsistently coded. This issue is partially resolved by the <code class="docutils literal notranslate"><span class="pre">load_ANES_data</span></code> function, yet there remains the issue of ambiguous values for categoricals. Packaged with <code class="docutils literal notranslate"><span class="pre">ANESPy</span></code> is <code class="docutils literal notranslate"><span class="pre">recode_to_char</span></code>, which replaces the values for a selected column with their full character labels from the codebook.</p>
+<p>For example, the 2012 edition includes some ideology variables, which when left as numbers, are not entirely useful.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data = anes.load_ANES_data(2008)
+data[&#39;V083099a&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>After recoding:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data.recode_to_char(&#39;V083099a&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we have a complete understanding of what these variables represent.</p>
+<section id="a-note-about-variable-names">
+<h3>A Note About Variable Names<a class="headerlink" href="#a-note-about-variable-names" title="Permalink to this heading"></a></h3>
+<p>At present, this function is designed to work only with the variable names in their original “V_____” format. Because of the duplicated pre/post variable issue, some variables will return a <code class="docutils literal notranslate"><span class="pre">KeyError</span></code> after being converted to their full-context name.</p>
+</section>
+</section>
+<section id="split-pre-post-variables">
+<h2>Split Pre &amp; Post Variables<a class="headerlink" href="#split-pre-post-variables" title="Permalink to this heading"></a></h2>
+<p>Another somewhat unbelievable issue with ANES datasets is that some years have duplicated variable codes. The first appearance represents the <em>pre-election</em> sample, while the second represents the <em>post-election</em> sample. As part of the <code class="docutils literal notranslate"><span class="pre">convert_var_names</span></code> functionality, specific variables are given “Pre” and “Post” tags. These can then be leveraged to split the variables into Pre and Post groups, which can be very useful for later analysis.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data = anes.load_ANES_data(2012)
+data.convert_var_names()
+data_pre, data_post = data.split_pre_post()
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/jacksonrudoff/opt/anaconda3/lib/python3.9/site-packages/anespy/anespy.py:182: FutureWarning: The default value of regex will change from True to False in a future version.
+  
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Converted to numbered variables.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data_pre
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+    </tr>
+    <tr>
+      <th>1</th>
+    </tr>
+    <tr>
+      <th>2</th>
+    </tr>
+    <tr>
+      <th>3</th>
+    </tr>
+    <tr>
+      <th>4</th>
+    </tr>
+    <tr>
+      <th>...</th>
+    </tr>
+    <tr>
+      <th>5909</th>
+    </tr>
+    <tr>
+      <th>5910</th>
+    </tr>
+    <tr>
+      <th>5911</th>
+    </tr>
+    <tr>
+      <th>5912</th>
+    </tr>
+    <tr>
+      <th>5913</th>
+    </tr>
+  </tbody>
+</table>
+<p>5914 rows × 0 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="generate-a-sample">
+<h2>Generate a Sample<a class="headerlink" href="#generate-a-sample" title="Permalink to this heading"></a></h2>
+<p>Lastly, this package allows you to draw a sample from the object along a set of specific variables. This can be useful for designs involving re-sampling, exploratory statistical testing, or other functions where the entire set of respondents is not needed.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">generate_sample</span></code> function takes two arguments: <code class="docutils literal notranslate"><span class="pre">variables</span></code> (a list of variable names) and <code class="docutils literal notranslate"><span class="pre">n_respondents</span></code>, which is size of the sample you want to extract.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>data = anes.load_ANES_data(2004)
+sample = data.generate_sample(list(data.columns.values[0:7]), n_respondents = 10)
+sample
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/jacksonrudoff/opt/anaconda3/lib/python3.9/site-packages/anespy/anespy.py:182: FutureWarning: The default value of regex will change from True to False in a future version.
+  
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Version</th>
+      <th>Dsetid</th>
+      <th>V040001</th>
+      <th>V040002</th>
+      <th>V040101</th>
+      <th>V040102</th>
+      <th>V040103</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>139</th>
+      <td>2004NES_VERSION:2005AUG16</td>
+      <td>2004.T</td>
+      <td>140</td>
+      <td>693</td>
+      <td>0.9129</td>
+      <td>0.9251</td>
+      <td>202</td>
+    </tr>
+    <tr>
+      <th>395</th>
+      <td>2004NES_VERSION:2005AUG16</td>
+      <td>2004.T</td>
+      <td>396</td>
+      <td>576</td>
+      <td>1.2559</td>
+      <td>1.2903</td>
+      <td>242</td>
+    </tr>
+    <tr>
+      <th>223</th>
+      <td>2004NES_VERSION:2005AUG16</td>
+      <td>2004.T</td>
+      <td>224</td>
+      <td>613</td>
+      <td>0.9218</td>
+      <td>0.8961</td>
+      <td>262</td>
+    </tr>
+    <tr>
+      <th>1197</th>
+      <td>2004NES_VERSION:2005AUG16</td>
+      <td>2004.T</td>
+      <td>1199</td>
+      <td>588</td>
+      <td>0.9994</td>
+      <td>1.0542</td>
+      <td>232</td>
+    </tr>
+    <tr>
+      <th>491</th>
+      <td>2004NES_VERSION:2005AUG16</td>
+      <td>2004.T</td>
+      <td>492</td>
+      <td>407</td>
+      <td>0.5177</td>
+      <td>0.5571</td>
+      <td>181</td>
+    </tr>
+    <tr>
+      <th>737</th>
+      <td>2004NES_VERSION:2005AUG16</td>
+      <td>2004.T</td>
+      <td>738</td>
+      <td>757</td>
+      <td>1.7232</td>
+      <td>1.7703</td>
+      <td>141</td>
+    </tr>
+    <tr>
+      <th>369</th>
+      <td>2004NES_VERSION:2005AUG16</td>
+      <td>2004.T</td>
+      <td>370</td>
+      <td>335</td>
+      <td>1.4699</td>
+      <td>1.5101</td>
+      <td>212</td>
+    </tr>
+    <tr>
+      <th>839</th>
+      <td>2004NES_VERSION:2005AUG16</td>
+      <td>2004.T</td>
+      <td>840</td>
+      <td>951</td>
+      <td>1.4943</td>
+      <td>1.6498</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <th>216</th>
+      <td>2004NES_VERSION:2005AUG16</td>
+      <td>2004.T</td>
+      <td>217</td>
+      <td>574</td>
+      <td>1.1943</td>
+      <td>1.0514</td>
+      <td>262</td>
+    </tr>
+    <tr>
+      <th>1115</th>
+      <td>2004NES_VERSION:2005AUG16</td>
+      <td>2004.T</td>
+      <td>1117</td>
+      <td>644</td>
+      <td>0.8616</td>
+      <td>0.8852</td>
+      <td>142</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="ANESPy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Jackson Rudoff.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
